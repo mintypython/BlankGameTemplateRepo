@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"loadLang",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"loadLang",
+  "parent":{
+    "name":"Locale",
+    "path":"folders/(System)/Controllers/Locale.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

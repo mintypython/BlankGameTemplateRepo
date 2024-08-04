@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"changePauseMenu",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"changePauseMenu",
+  "parent":{
+    "name":"Pausing",
+    "path":"folders/(System)/Controllers/Pausing.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

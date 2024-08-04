@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"keepRunning",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"keepRunning",
+  "parent":{
+    "name":"Master",
+    "path":"folders/(System)/Controllers/Master.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
