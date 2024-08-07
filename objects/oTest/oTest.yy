@@ -9,8 +9,8 @@
   "name":"oTest",
   "overriddenProperties":[],
   "parent":{
-    "name":"(Game)",
-    "path":"folders/(Game).yy",
+    "name":"Objects",
+    "path":"folders/(Game)/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"VinylStop",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"VinylStop",
+  "parent":{
+    "name":"Playback",
+    "path":"folders/(System)/(Plugins)/(Vinyl)/Playback.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -2,11 +2,7 @@
 
 // Draw mouse cursor or not
 if global.input == 0 cursor_sprite = sCursor
-else if global.input == 1 {
-	cursor_sprite = cr_none
-	//mouse_x = 0
-	//mouse_y = 0
-}
+else if global.input == 1 cursor_sprite = cr_none
 
 // Switch back to KBM if the mouse moves or any keyboard key is pressed
 if ((mouse_x != xx) 
@@ -15,7 +11,7 @@ if ((mouse_x != xx)
 	and global.input == 1 {
 		global.input = 0
 }
-// Update previous mouse position
+// Update previous mouse position to the new current position
 xx = mouse_x;
 yy = mouse_y;
 
@@ -24,6 +20,8 @@ var _controller = input_source_detect_input(INPUT_GAMEPAD)
 
 // Turn the global controller flag on when the controller is used, if it's off already
 if _controller and global.input == 0 global.input = 1 
+
+
 #endregion
 
 #region Controller Navigation
@@ -548,15 +546,16 @@ if global.input == 1 {
 		}
 	#endregion
 	
-	// Anywhere in the menus
-	if input_check_pressed("back") and room == rSettings room_goto(rMainMenu)
-	if input_check_pressed("back") and room == rAudio {
-		room_goto(rSettings)
-		saveGame()
-	}
-	if input_check_pressed("back") and room == rVideo room_goto(rSettings)
-	if input_check_pressed("back") and room == rGameplay room_goto(rSettings)
-	if input_check_pressed("back") and room == rControls room_goto(rSettings)
+	#region Anywhere in the menus
+		if input_check_pressed("back") and room == rSettings room_goto(rMainMenu)
+		if input_check_pressed("back") and room == rAudio {
+			room_goto(rSettings)
+			saveGame()
+		}
+		if input_check_pressed("back") and room == rVideo room_goto(rSettings)
+		if input_check_pressed("back") and room == rGameplay room_goto(rSettings)
+		if input_check_pressed("back") and room == rControls room_goto(rSettings)
+	#endregion
 
 }
 #endregion

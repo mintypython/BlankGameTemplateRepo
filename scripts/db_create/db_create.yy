@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"db_create",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"db_create",
+  "parent":{
+    "name":"(Database)",
+    "path":"folders/(System)/(Plugins)/(Database).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

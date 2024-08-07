@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"db_most_recent",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"db_most_recent",
+  "parent":{
+    "name":"(Database)",
+    "path":"folders/(System)/(Plugins)/(Database).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

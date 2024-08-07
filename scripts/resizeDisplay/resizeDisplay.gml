@@ -1,4 +1,4 @@
-function resize() {
+function resizeDisplay() {
 	// Set the resolution to display, or get this value from the device
 	var _displayWidth = global.width
 	var _displayHeight = global.height

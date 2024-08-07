@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__DynamoClassScript",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__DynamoClassScript",
+  "parent":{
+    "name":"Classes",
+    "path":"folders/(System)/(Plugins)/(Dynamo)/(System)/Classes.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

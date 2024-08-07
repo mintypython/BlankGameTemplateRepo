@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__DynamoLoadJSON",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__DynamoLoadJSON",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/(System)/(Plugins)/(Dynamo)/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

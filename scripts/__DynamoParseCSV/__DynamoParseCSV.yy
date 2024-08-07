@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__DynamoParseCSV",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__DynamoParseCSV",
+  "parent":{
+    "name":"(System)",
+    "path":"folders/(System)/(Plugins)/(Dynamo)/(System).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
