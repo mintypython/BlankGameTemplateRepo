@@ -27,7 +27,8 @@ function __input_config_verbs()
 			jump:  input_binding_key(vk_space),
 			run: input_binding_key(vk_shift),
             interact:  input_binding_key("E"),
-			inventory: input_binding_key(vk_tab),
+			inventory: input_binding_key(vk_tab),	
+
         },
         
         gamepad:

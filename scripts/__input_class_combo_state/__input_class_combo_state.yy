@@ -6,7 +6,7 @@
   "name":"__input_class_combo_state",
   "parent":{
     "name":"Classes",
-    "path":"folders/(System)/(Plugins)/(Input)/(System)/Classes.yy",
+    "path":"folders/(Plugins)/(Input)/(System)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

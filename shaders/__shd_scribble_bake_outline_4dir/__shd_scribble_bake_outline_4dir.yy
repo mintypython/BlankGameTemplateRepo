@@ -4,7 +4,7 @@
   "name":"__shd_scribble_bake_outline_4dir",
   "parent":{
     "name":"Shaders",
-    "path":"folders/(System)/(Plugins)/(Scribble)/(System - don't call these functions)/Shaders.yy",
+    "path":"folders/(Plugins)/(Scribble)/(System - don't call these functions)/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

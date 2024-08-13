@@ -1,0 +1,20 @@
+id: sandbox
+file_type: screen
+
+import:
+  - ../Templates/
+
+  - /YUI/Widgets/fib.yui
+
+resources:
+
+root:
+
+  type: screen_base
+  title: Dev Sandbox
+  items:
+    - type: text
+      text: Fibonacci test
+      text_style: subtitle
+
+    - type: fib

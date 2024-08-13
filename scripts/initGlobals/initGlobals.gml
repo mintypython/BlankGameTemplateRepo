@@ -1,11 +1,9 @@
 // Initialize global variables
 
 // Camera
-global.width = display_get_width()
-global.height = display_get_height()
-global.view_width = camera_get_view_width(view_camera[0])
-global.view_height = camera_get_view_height(view_camera[0])
-display_set_gui_size(global.view_width, global.view_height)
+global.width = SCREEN_W
+global.height = SCREEN_H
+display_set_gui_size(global.width, global.height)
 
 // Sounds are loaded in the Creation Event of the Main Menu Room on Boot
 global.sfxLoaded = false
@@ -23,14 +21,8 @@ global.resolution = 5
 // Difficulty (Easy = 0, Normal = 1, Hard = 2)
 global.difficulty = 1
 
-// Player profiles (First = 0, Second = 1, Third = 2)
+// Player profiles (First = 0, Second = 1, Third = 2) [NOT IN USE]
 global.profile = 0
-
-// Controls
-global.up = ord("W")
-global.left = ord("A")
-global.down = ord("S")
-global.right = ord("D")
 
 // Pausing
 global.pause = 0

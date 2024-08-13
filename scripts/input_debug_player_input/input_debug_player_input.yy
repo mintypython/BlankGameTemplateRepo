@@ -6,7 +6,7 @@
   "name":"input_debug_player_input",
   "parent":{
     "name":"23  Other",
-    "path":"folders/(System)/(Plugins)/(Input)/23  Other.yy",
+    "path":"folders/(Plugins)/(Input)/23  Other.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -49,6 +49,7 @@ if (global.pause == 1) {
 						break
 						case 2: // Main Menu
 							global.pause = 0
+							application_surface_draw_enable(true)
 							room_goto(rMainMenu)
 						break
 					}

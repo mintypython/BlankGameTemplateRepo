@@ -1,1 +1,2 @@
-if !instance_exists(oMainMenuControl) instance_create_layer(0, 0, "Instances", oMainMenuControl)
+// Load Previous Game
+loadGame()

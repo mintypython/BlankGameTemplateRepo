@@ -10,8 +10,8 @@
   "name":"oAudioControl",
   "overriddenProperties":[],
   "parent":{
-    "name":"Controllers",
-    "path":"folders/(System)/Controllers.yy",
+    "name":"Subcontrollers",
+    "path":"folders/(System)/Controllers/Subcontrollers.yy",
   },
   "parentObjectId":null,
   "persistent":true,

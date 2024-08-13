@@ -1,18 +1,18 @@
 if (global.pause == 1) {
-	
+
 	// Set the GUI size
-	display_set_gui_size(resW, resH)
+	display_set_gui_size(global.width, global.height)
 	
 	// Dim the screen
 	draw_set_color(c_black)
 	draw_set_alpha(0.25)
-	draw_rectangle(0, 0, resW, resH, false)
+	draw_rectangle(0, 0, global.width, global.height, false)
 	
 	// Pause Menu Title Font
 	draw_set_font(global.A60)
 	draw_set_color(c_white)
 	draw_set_alpha(1)
-	drawCenterText(resW / 2, resH / 3, locale("paused"))
+	drawCenterText(global.width / 2, global.height / 3, locale("paused"))
 	
 	// Pause Menu Item Font
 	draw_set_font(global.A30)

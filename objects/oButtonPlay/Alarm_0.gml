@@ -2,4 +2,4 @@
 event_inherited()
 
 // Load the game room
-room_goto(rGame)
+room_goto(rGameRoom)

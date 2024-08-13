@@ -1,8 +1,5 @@
 function saveGame() {
 	
-	// Show saving
-	if (!instance_exists(oSaving)) instance_create_depth(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), -16000, oSaving)
-	
 	var _struct =
 	{
 		profile: global.profile,
@@ -20,6 +17,9 @@ function saveGame() {
 	var _file = file_text_open_write("game.save")
 	file_text_write_string(_file, _string)
 	file_text_close(_file)
+	
+	// Show saving
+	if (!instance_exists(oSaving)) instance_create_layer(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), "Control", oSaving)
 }
 
 function loadGame() {
@@ -42,6 +42,7 @@ function loadGame() {
 		
 		// Update video settings after load
 		updateVideo()
+		
 		// Update language settings after load
 		loadLang(global.languageIndex)
 	}

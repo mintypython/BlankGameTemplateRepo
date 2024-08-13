@@ -1,0 +1,45 @@
+file_type: resources
+
+import:
+  - "../Templates/back_button.yui"
+  - "../Templates/main_panel.yui"
+  - /YUI/Animations/transitions.yui
+
+resources:
+
+  screen_base:
+    type: template
+
+    slots:
+      title: null
+      items: []
+      content_layout: null
+
+    template:
+      type: panel
+      padding: 30
+      spacing: 20
+      animate:
+        on_visible:
+          opacity: &fade_in
+        on_unloading:
+          opacity: &fade_out
+      elements:
+
+        - type: panel
+          layout: horizontal
+          spacing: 10
+          elements:
+            - type: back_button
+
+            - type: text
+              padding: 3
+              text: $title
+              text_style: subtitle
+
+        - type: main_panel
+          layout: $content_layout ?? 'vertical'
+          size: stretch
+          padding: 20
+          spacing: 10
+          elements: $items

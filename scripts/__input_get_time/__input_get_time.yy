@@ -6,7 +6,7 @@
   "name":"__input_get_time",
   "parent":{
     "name":"(System)",
-    "path":"folders/(System)/(Plugins)/(Input)/(System).yy",
+    "path":"folders/(Plugins)/(Input)/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

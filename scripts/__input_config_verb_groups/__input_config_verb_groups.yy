@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"__input_config_verb_groups",
   "parent":{
-    "name":"00  Configuration",
-    "path":"folders/(System)/(Plugins)/(Input)/00  Configuration.yy",
+    "name":"00  Configuration - Please edit these scripts!",
+    "path":"folders/(Plugins)/(Input)/00  Configuration - Please edit these scripts!.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

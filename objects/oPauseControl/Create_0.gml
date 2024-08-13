@@ -1,10 +1,9 @@
 #region Pause Function
-pauseSurf = -1
+
+// Surfaces
+pauseSurf = surface_create(global.width, global.height)
 pauseSurfBuffer = -1
 
-// Game resolution
-resW = global.width
-resH = global.height
 #endregion
 
 #region Pause Menu
@@ -39,8 +38,8 @@ index = 0
 prevIndex = index
 subMenu = 0
 
-menuX = room_width * 0.5 // X position of Menu
-menuY = room_height * 0.4 // Y position of Menu
+menuX = global.width * 0.5 // X position of Menu
+menuY = global.height * 0.4 // Y position of Menu
 clickAreaW = 35 // Width of the clickable area
 
 function button(_y, _wl, _wr, _h) constructor {

@@ -11,8 +11,8 @@
   "name":"oButtonParent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Parents",
-    "path":"folders/(Main Menu)/Parents.yy",
+    "name":"Grandparents",
+    "path":"folders/(Main Menu)/Grandparents.yy",
   },
   "parentObjectId":null,
   "persistent":false,
