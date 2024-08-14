@@ -1,8 +1,8 @@
 #region Controller / KBM Detection
 
-// Draw mouse cursor or not
-if global.input == 0 cursor_sprite = sCursor
-else if global.input == 1 cursor_sprite = cr_none
+// Draw custom mouse cursor or not
+/*if global.input == 0 cursor_sprite = sCursor
+else if global.input == 1 cursor_sprite = cr_none*/
 
 // Switch back to KBM if the mouse moves or any keyboard key is pressed
 if ((mouse_x != xx) 

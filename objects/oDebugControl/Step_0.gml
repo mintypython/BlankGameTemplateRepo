@@ -1,0 +1,1 @@
+game_set_speed(global.gamespeed, gamespeed_fps)

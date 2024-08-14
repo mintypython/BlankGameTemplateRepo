@@ -168,6 +168,7 @@
     {"$GMIncludedFile":"","%Name":"chatterbox_license.txt","CopyToMask":-1,"filePath":"datafiles","name":"chatterbox_license.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"controllerblacklist.csv","CopyToMask":-1,"filePath":"datafiles","name":"controllerblacklist.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"controllertypes.csv","CopyToMask":-1,"filePath":"datafiles","name":"controllertypes.csv","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"crash.txt","CopyToMask":-1,"filePath":"datafiles","name":"crash.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"inventory.yaml","CopyToMask":-1,"filePath":"datafiles/ExampleProject/Data","name":"inventory.yaml","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"equip_item.yui","CopyToMask":-1,"filePath":"datafiles/ExampleProject/Interactions","name":"equip_item.yui","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"animation_builder.yui","CopyToMask":-1,"filePath":"datafiles/ExampleProject/Screens/Animation Examples","name":"animation_builder.yui","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

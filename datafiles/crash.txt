@@ -1,0 +1,7 @@
+{ script : "gml_Script_loadGame", message : "JSON parse error : unexpected end of data", line : 31, stacktrace : [ "gml_Script_loadGame (line 31)","gml_Room_rInitialize_Create (line 9) - loadGame()" ], longMessage : "FATAL ERROR in Room Creation Code for room rInitialize
+
+
+JSON parse error : unexpected end of data
+
+ at gml_Script_loadGame (line 31) - 		var _struct = json_parse(_json)
+" }

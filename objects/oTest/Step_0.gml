@@ -4,8 +4,9 @@ if y > room_height + hheight y = hheight
 if x < -hwidth x = room_width - hwidth
 if y < -hheight y = room_height - hheight
 
-// Rotate
-image_angle += 3
+// Movement
+speed = 3 * global.deltaMulti
+image_angle += 3 * global.deltaMulti
 
 // Light
 light.x = x

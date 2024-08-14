@@ -14,7 +14,8 @@ function saveGame() {
 	}
 	
 	var _string = json_stringify(_struct)
-	var _file = file_text_open_write("game.save")
+	var _path = "C:/Games/BlankGame/BlankGame.sav"
+	var _file = file_text_open_write(_path)
 	file_text_write_string(_file, _string)
 	file_text_close(_file)
 	
@@ -23,8 +24,9 @@ function saveGame() {
 }
 
 function loadGame() {
-	if file_exists("game.save") {
-		var _file = file_text_open_read("game.save")
+	var _path = "C:/Games/BlankGame/BlankGame.sav"
+	if file_exists(_path) {
+		var _file = file_text_open_read(_path)
 		var _json = file_text_read_string(_file)
 		var _struct = json_parse(_json)
 

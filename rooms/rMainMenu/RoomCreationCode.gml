@@ -1,2 +1,0 @@
-// Load Previous Game
-loadGame()

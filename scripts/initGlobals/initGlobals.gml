@@ -1,6 +1,11 @@
 // Initialize global variables
 
-// Camera
+// Delta Time
+global.deltaTarget = 1 / FRAMERATE
+global.deltaActual = delta_time / 1000000
+global.deltaMulti = global.deltaActual / global.deltaTarget
+
+// Video
 global.width = SCREEN_W
 global.height = SCREEN_H
 display_set_gui_size(global.width, global.height)

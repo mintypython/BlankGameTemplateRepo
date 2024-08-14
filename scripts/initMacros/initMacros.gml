@@ -13,7 +13,7 @@
 
 #macro SCREEN_W display_get_width()
 #macro SCREEN_H display_get_height()
+#macro FRAMERATE display_get_frequency()
 
 #macro MENU_BUTT_ALPHA 0.8
 
-#macro LIGHTING_AMBIENT_SHADOW 0.2
