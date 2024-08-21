@@ -1,7 +1,5 @@
-{ script : "gml_Script_loadGame", message : "JSON parse error : unexpected end of data", line : 31, stacktrace : [ "gml_Script_loadGame (line 31)","gml_Room_rInitialize_Create (line 9) - loadGame()" ], longMessage : "FATAL ERROR in Room Creation Code for room rInitialize
-
-
-JSON parse error : unexpected end of data
-
- at gml_Script_loadGame (line 31) - 		var _struct = json_parse(_json)
+{ stacktrace : [ "gml_Script_saveGame (line 21)","gml_Script_anon@1062@gml_Object_oMasterControl_Create_0 (line 19) - 		save = function() {saveGame()}" ], script : "gml_Script_saveGame", message : "DoAdd :: Execution Error", line : 21, longMessage : "ERROR in action number 1
+of Create Event for object oLanguageList:
+DoAdd :: Execution Error
+ at gml_Script_saveGame (line 21) - 	var _path = global.saveDir+"BlankGame"+global.profile+".sav"
 " }

@@ -4,7 +4,7 @@ function resizeDisplay() {
 	var _displayHeight = global.height
 
 	// Set the size of GUI
-	display_set_gui_size(_displayWidth, _displayHeight)
+	// display_set_gui_size(_displayWidth, _displayHeight)
 
 	// Set the size of the game window
 	window_set_size(_displayWidth, _displayHeight)

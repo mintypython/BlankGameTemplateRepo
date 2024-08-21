@@ -200,7 +200,6 @@
     {"name":"oButtonQuit","order":2,"path":"objects/oButtonQuit/oButtonQuit.yy",},
     {"name":"oButtonSettings","order":1,"path":"objects/oButtonSettings/oButtonSettings.yy",},
     {"name":"oButtonVideo","order":1,"path":"objects/oButtonVideo/oButtonVideo.yy",},
-    {"name":"oDebugControl","order":1,"path":"objects/oDebugControl/oDebugControl.yy",},
     {"name":"oDifficultyItem","order":3,"path":"objects/oDifficultyItem/oDifficultyItem.yy",},
     {"name":"oDown","order":2,"path":"objects/oDown/oDown.yy",},
     {"name":"oInitialize","order":3,"path":"objects/oInitialize/oInitialize.yy",},

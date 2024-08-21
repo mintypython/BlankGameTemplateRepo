@@ -14,7 +14,11 @@ function saveGame() {
 	}
 	
 	var _string = json_stringify(_struct)
-	var _path = "C:/Games/BlankGame/BlankGame.sav"
+	if (os_type == os_windows) {
+		var _localAppdata = environment_get_variable("localappdata")
+		global.saveDir = _localAppdata + "/BankGame/"
+	}
+	var _path = global.saveDir+"BlankGame"+string(global.profile)+".sav"
 	var _file = file_text_open_write(_path)
 	file_text_write_string(_file, _string)
 	file_text_close(_file)
@@ -24,7 +28,11 @@ function saveGame() {
 }
 
 function loadGame() {
-	var _path = "C:/Games/BlankGame/BlankGame.sav"
+	if (os_type == os_windows) {
+		var _localAppdata = environment_get_variable("localappdata")
+		global.saveDir = _localAppdata + "/BankGame/"
+	}
+	var _path = global.saveDir+"BlankGame"+string(global.profile)+".sav"
 	if file_exists(_path) {
 		var _file = file_text_open_read(_path)
 		var _json = file_text_read_string(_file)
@@ -41,9 +49,6 @@ function loadGame() {
 		input_player_import(_struct.controls)
 		
 		file_text_close(_file)
-		
-		// Update video settings after load
-		updateVideo()
 		
 		// Update language settings after load
 		loadLang(global.languageIndex)

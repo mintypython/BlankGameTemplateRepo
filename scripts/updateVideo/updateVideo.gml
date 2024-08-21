@@ -38,5 +38,3 @@ function updateVideo() {
 	else if global.fullscreen == 1 window_set_fullscreen(true)
 	resizeDisplay()
 }
-
-

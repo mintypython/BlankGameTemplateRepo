@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndAdhesiveWombatNightShade.wav",
   "type":0,
-  "volume":0.31,
+  "volume":0.34,
 }

@@ -305,7 +305,6 @@
     {"id":{"name":"oButtonQuit","path":"objects/oButtonQuit/oButtonQuit.yy",},},
     {"id":{"name":"oButtonSettings","path":"objects/oButtonSettings/oButtonSettings.yy",},},
     {"id":{"name":"oButtonVideo","path":"objects/oButtonVideo/oButtonVideo.yy",},},
-    {"id":{"name":"oDebugControl","path":"objects/oDebugControl/oDebugControl.yy",},},
     {"id":{"name":"oDifficultyItem","path":"objects/oDifficultyItem/oDifficultyItem.yy",},},
     {"id":{"name":"oDifficultyList","path":"objects/oDifficultyList/oDifficultyList.yy",},},
     {"id":{"name":"oDown","path":"objects/oDown/oDown.yy",},},

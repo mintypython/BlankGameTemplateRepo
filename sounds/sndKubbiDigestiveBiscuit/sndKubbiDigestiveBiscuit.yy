@@ -21,5 +21,5 @@
   "sampleRate":44100,
   "soundFile":"sndKubbiDigestiveBiscuit.wav",
   "type":0,
-  "volume":0.28,
+  "volume":0.29,
 }

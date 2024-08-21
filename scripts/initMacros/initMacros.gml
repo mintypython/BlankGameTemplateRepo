@@ -16,4 +16,3 @@
 #macro FRAMERATE display_get_frequency()
 
 #macro MENU_BUTT_ALPHA 0.8
-

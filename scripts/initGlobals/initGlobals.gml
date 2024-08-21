@@ -1,14 +1,17 @@
 // Initialize global variables
 
+// Saving
+global.saveDir = game_save_id
+
 // Delta Time
 global.deltaTarget = 1 / FRAMERATE
 global.deltaActual = delta_time / 1000000
 global.deltaMulti = global.deltaActual / global.deltaTarget
+global.gamespeed = game_get_speed(gamespeed_fps)
 
 // Video
 global.width = SCREEN_W
 global.height = SCREEN_H
-display_set_gui_size(global.width, global.height)
 
 // Sounds are loaded in the Creation Event of the Main Menu Room on Boot
 global.sfxLoaded = false

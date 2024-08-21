@@ -1,5 +1,4 @@
 // Create these objects if they do not exist
-if !instance_exists(oDebugControl) instance_create_layer(0, 0, "Control", oDebugControl)
 if !instance_exists(oAudioControl) instance_create_layer(0, 0, "Control", oAudioControl)
 if !instance_exists(oNavControl) instance_create_layer(0, 0, "Control", oNavControl)
 
@@ -13,3 +12,6 @@ if layer_get_hspeed(_bg) != 0 or layer_get_vspeed(_bg) != 0 {
 	layer_hspeed(_bg, 0.5 * global.deltaMulti)
 	layer_vspeed(_bg, 0.5 * global.deltaMulti)
 }
+
+// Update FPS
+game_set_speed(global.gamespeed, gamespeed_fps)

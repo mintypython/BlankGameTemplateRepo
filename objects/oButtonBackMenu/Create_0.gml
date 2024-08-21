@@ -3,3 +3,4 @@ event_inherited()
 
 // Display this text on the button
 buttonText = locale("back")
+
