@@ -6,7 +6,7 @@
   "name":"yui_find_item_by_id",
   "parent":{
     "name":"scripts",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

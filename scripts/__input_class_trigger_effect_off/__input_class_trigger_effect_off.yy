@@ -6,7 +6,7 @@
   "name":"__input_class_trigger_effect_off",
   "parent":{
     "name":"Classes",
-    "path":"folders/(Plugins)/(Input)/(System)/Classes.yy",
+    "path":"folders/(System)/(Plugins)/(Input)/(System)/Classes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

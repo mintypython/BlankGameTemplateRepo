@@ -111,7 +111,7 @@
   "name":"curveSineInv",
   "parent":{
     "name":"Easing Curves",
-    "path":"folders/(Plugins)/(YUI)/Easing Curves.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Easing Curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

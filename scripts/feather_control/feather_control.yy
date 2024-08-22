@@ -6,7 +6,7 @@
   "name":"feather_control",
   "parent":{
     "name":"(YUI)",
-    "path":"folders/(Plugins)/(YUI).yy",
+    "path":"folders/(System)/(Plugins)/(YUI).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

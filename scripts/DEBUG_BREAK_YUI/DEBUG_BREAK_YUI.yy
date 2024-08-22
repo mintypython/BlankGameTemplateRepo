@@ -6,7 +6,7 @@
   "name":"DEBUG_BREAK_YUI",
   "parent":{
     "name":"scripts",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

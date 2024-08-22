@@ -14,7 +14,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/(Lighting)/Objects.yy",
+    "path":"folders/(System)/(Plugins)/(Lighting)/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -6,7 +6,7 @@
   "name":"YsStringLiteralParselet",
   "parent":{
     "name":"Deprecated",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Deprecated.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Deprecated.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

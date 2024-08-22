@@ -6,7 +6,7 @@
   "name":"yui_modify_numeric_value",
   "parent":{
     "name":"Handlers",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Event Handling/Handlers.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Event Handling/Handlers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

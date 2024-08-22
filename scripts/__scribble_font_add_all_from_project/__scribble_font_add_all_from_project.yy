@@ -6,7 +6,7 @@
   "name":"__scribble_font_add_all_from_project",
   "parent":{
     "name":"(System - don't call these functions)",
-    "path":"folders/(Plugins)/(Scribble)/(System - don't call these functions).yy",
+    "path":"folders/(System)/(Plugins)/(Scribble)/(System - don't call these functions).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

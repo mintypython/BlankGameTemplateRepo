@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"scrSaving",
   "parent":{
-    "name":"Saving",
-    "path":"folders/(System)/Controllers/Saving.yy",
+    "name":"Scripts",
+    "path":"folders/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

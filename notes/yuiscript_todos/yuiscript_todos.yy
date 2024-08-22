@@ -4,7 +4,7 @@
   "name":"yuiscript_todos",
   "parent":{
     "name":"Parser",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Parser.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Parser.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

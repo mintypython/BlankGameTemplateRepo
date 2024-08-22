@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"YUI Example",
-    "path":"folders/(Plugins)/(YUI)/YUI Example.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/YUI Example.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -17,4 +17,7 @@ with (oLanguageList) {
 // Set locale position and load the translations
 global.locale = position
 loadLang(position)
-reloadMain() // Reload room with new language
+
+// Reload room with new language
+room_goto(rMainMenu)
+oButtonPlay.selected = 0

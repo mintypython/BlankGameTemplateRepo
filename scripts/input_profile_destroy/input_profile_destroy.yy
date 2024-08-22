@@ -6,7 +6,7 @@
   "name":"input_profile_destroy",
   "parent":{
     "name":"16  Profiles",
-    "path":"folders/(Plugins)/(Input)/16  Profiles.yy",
+    "path":"folders/(System)/(Plugins)/(Input)/16  Profiles.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

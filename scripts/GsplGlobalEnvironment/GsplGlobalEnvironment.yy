@@ -6,7 +6,7 @@
   "name":"GsplGlobalEnvironment",
   "parent":{
     "name":"Environment",
-    "path":"folders/(Plugins)/(YUI)/Packages - gspl/Execute/Environment.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Execute/Environment.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

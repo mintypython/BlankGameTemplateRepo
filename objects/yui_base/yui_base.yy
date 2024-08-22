@@ -13,7 +13,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Render Items",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Render Items.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Render Items.yy",
   },
   "parentObjectId":{
     "name":"yui_cursor_item",

@@ -6,7 +6,7 @@
   "name":"scribble_glyph_get",
   "parent":{
     "name":"Fonts",
-    "path":"folders/(Plugins)/(Scribble)/Fonts.yy",
+    "path":"folders/(System)/(Plugins)/(Scribble)/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

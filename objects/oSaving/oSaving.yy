@@ -8,8 +8,8 @@
   "name":"oSaving",
   "overriddenProperties":[],
   "parent":{
-    "name":"Saving",
-    "path":"folders/(System)/Controllers/Saving.yy",
+    "name":"Objects",
+    "path":"folders/(System)/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

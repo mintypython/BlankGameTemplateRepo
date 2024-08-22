@@ -6,7 +6,7 @@
   "name":"scribble_font_get_glyph_ranges",
   "parent":{
     "name":"Fonts",
-    "path":"folders/(Plugins)/(Scribble)/Fonts.yy",
+    "path":"folders/(System)/(Plugins)/(Scribble)/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

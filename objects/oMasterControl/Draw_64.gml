@@ -15,3 +15,4 @@ draw_set_font(global.A11)
 drawCenterText(room_width - 48, room_height - (room_height * 0.0148), "v0.0.5")
 
 #endregion
+

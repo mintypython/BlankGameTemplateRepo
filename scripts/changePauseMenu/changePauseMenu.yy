@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"changePauseMenu",
   "parent":{
-    "name":"Pausing",
-    "path":"folders/(System)/Controllers/Pausing.yy",
+    "name":"Scripts",
+    "path":"folders/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

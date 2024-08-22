@@ -6,7 +6,7 @@
   "name":"yui_validate_number_input",
   "parent":{
     "name":"scripts",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

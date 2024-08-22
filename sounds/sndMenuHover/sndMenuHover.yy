@@ -13,7 +13,7 @@
   "name":"sndMenuHover",
   "parent":{
     "name":"SFX",
-    "path":"folders/(Sounds)/SFX.yy",
+    "path":"folders/(System)/Sounds/SFX.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

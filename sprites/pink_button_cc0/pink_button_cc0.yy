@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"UI Sprites",
-    "path":"folders/(Plugins)/(YUI)/YUI Example/UI Sprites.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/YUI Example/UI Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

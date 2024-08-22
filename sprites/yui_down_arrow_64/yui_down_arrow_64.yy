@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Sprites.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

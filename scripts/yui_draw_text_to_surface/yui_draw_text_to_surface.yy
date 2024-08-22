@@ -6,7 +6,7 @@
   "name":"yui_draw_text_to_surface",
   "parent":{
     "name":"draw",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/scripts/draw.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts/draw.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

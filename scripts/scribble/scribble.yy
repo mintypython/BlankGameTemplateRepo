@@ -6,7 +6,7 @@
   "name":"scribble",
   "parent":{
     "name":"(Scribble)",
-    "path":"folders/(Plugins)/(Scribble).yy",
+    "path":"folders/(System)/(Plugins)/(Scribble).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

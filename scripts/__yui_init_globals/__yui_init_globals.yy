@@ -6,7 +6,7 @@
   "name":"__yui_init_globals",
   "parent":{
     "name":"Packages - YUI",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

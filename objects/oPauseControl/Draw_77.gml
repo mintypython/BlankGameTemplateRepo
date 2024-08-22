@@ -2,10 +2,6 @@
 // Disable alpha blending
 gpu_set_blendenable(false);
 
-/*/ Keep resolution up to date
-global.width = global.width
-global.height = global.height*/
-
 if global.pause { // Draw frozen image to the screen while paused
 	surface_set_target(application_surface)
 		if (surface_exists(pauseSurf)) {

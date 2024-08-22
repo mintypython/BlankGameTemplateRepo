@@ -52,8 +52,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Saving",
-    "path":"folders/(System)/Controllers/Saving.yy",
+    "name":"Sprites",
+    "path":"folders/(System)/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

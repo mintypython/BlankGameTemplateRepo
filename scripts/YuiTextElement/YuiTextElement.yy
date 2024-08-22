@@ -6,7 +6,7 @@
   "name":"YuiTextElement",
   "parent":{
     "name":"Elements",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Elements.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Elements.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

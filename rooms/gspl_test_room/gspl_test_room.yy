@@ -14,7 +14,7 @@
   "name":"gspl_test_room",
   "parent":{
     "name":"test",
-    "path":"folders/(Plugins)/(YUI)/Packages - gspl/test.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/test.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

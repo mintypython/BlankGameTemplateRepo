@@ -6,7 +6,7 @@
   "name":"input_string",
   "parent":{
     "name":"Input",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Input.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Input.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

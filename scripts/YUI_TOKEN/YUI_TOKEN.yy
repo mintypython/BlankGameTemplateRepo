@@ -6,7 +6,7 @@
   "name":"YUI_TOKEN",
   "parent":{
     "name":"Yui",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Parser/Yui.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Parser/Yui.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

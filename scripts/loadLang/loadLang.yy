@@ -5,8 +5,8 @@
   "isDnD":false,
   "name":"loadLang",
   "parent":{
-    "name":"Locale",
-    "path":"folders/(System)/Controllers/Locale.yy",
+    "name":"Scripts",
+    "path":"folders/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -12,7 +12,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/(Plugins)/(YUI)/Packages - gspl/Objects.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,

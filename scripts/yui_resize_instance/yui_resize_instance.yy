@@ -6,7 +6,7 @@
   "name":"yui_resize_instance",
   "parent":{
     "name":"Layout",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Layout.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Layout.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

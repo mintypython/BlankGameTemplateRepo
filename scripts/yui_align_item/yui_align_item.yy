@@ -6,7 +6,7 @@
   "name":"yui_align_item",
   "parent":{
     "name":"Layout",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Layout.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Layout.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

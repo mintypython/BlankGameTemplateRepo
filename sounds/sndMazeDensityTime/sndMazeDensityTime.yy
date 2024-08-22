@@ -13,7 +13,7 @@
   "name":"sndMazeDensityTime",
   "parent":{
     "name":"Music",
-    "path":"folders/(Sounds)/Music.yy",
+    "path":"folders/(System)/Sounds/Music.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

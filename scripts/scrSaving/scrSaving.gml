@@ -16,7 +16,7 @@ function saveGame() {
 	var _string = json_stringify(_struct)
 	if (os_type == os_windows) {
 		var _localAppdata = environment_get_variable("localappdata")
-		global.saveDir = _localAppdata + "/BankGame/"
+		global.saveDir = _localAppdata + "/BlankGame/"
 	}
 	var _path = global.saveDir+"BlankGame"+string(global.profile)+".sav"
 	var _file = file_text_open_write(_path)
@@ -30,7 +30,7 @@ function saveGame() {
 function loadGame() {
 	if (os_type == os_windows) {
 		var _localAppdata = environment_get_variable("localappdata")
-		global.saveDir = _localAppdata + "/BankGame/"
+		global.saveDir = _localAppdata + "/BlankGame/"
 	}
 	var _path = global.saveDir+"BlankGame"+string(global.profile)+".sav"
 	if file_exists(_path) {

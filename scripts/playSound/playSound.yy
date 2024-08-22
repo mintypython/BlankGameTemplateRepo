@@ -6,7 +6,7 @@
   "name":"playSound",
   "parent":{
     "name":"Scripts",
-    "path":"folders/(Main Menu)/Scripts.yy",
+    "path":"folders/(System)/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

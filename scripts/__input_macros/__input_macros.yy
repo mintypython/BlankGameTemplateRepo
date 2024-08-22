@@ -6,7 +6,7 @@
   "name":"__input_macros",
   "parent":{
     "name":"(System)",
-    "path":"folders/(Plugins)/(Input)/(System).yy",
+    "path":"folders/(System)/(Plugins)/(Input)/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

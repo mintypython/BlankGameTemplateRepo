@@ -6,7 +6,7 @@
   "name":"yui_find_focus_item",
   "parent":{
     "name":"Cursor",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Cursor.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Cursor.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

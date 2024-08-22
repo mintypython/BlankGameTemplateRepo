@@ -1,8 +1,5 @@
 if (global.pause == 1) {
 
-	// Set the GUI size
-	display_set_gui_size(global.width, global.height)
-	
 	// Dim the screen
 	draw_set_color(c_black)
 	draw_set_alpha(0.25)

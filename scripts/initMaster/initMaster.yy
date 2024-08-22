@@ -1,12 +1,12 @@
 {
   "$GMScript":"v1",
-  "%Name":"reloadMain",
+  "%Name":"initMaster",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"reloadMain",
+  "name":"initMaster",
   "parent":{
-    "name":"Scripts",
-    "path":"folders/(Main Menu)/Scripts.yy",
+    "name":"Init",
+    "path":"folders/(System)/Init.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

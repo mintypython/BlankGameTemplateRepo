@@ -12,8 +12,8 @@
   "name":"oPauseControl",
   "overriddenProperties":[],
   "parent":{
-    "name":"Pausing",
-    "path":"folders/(System)/Controllers/Pausing.yy",
+    "name":"Controllers",
+    "path":"folders/(System)/Controllers.yy",
   },
   "parentObjectId":null,
   "persistent":false,

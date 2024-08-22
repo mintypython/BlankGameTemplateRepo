@@ -9,9 +9,12 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/(Lighting)/Objects.yy",
+    "path":"folders/(Game)/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"oWall",
+    "path":"objects/oWall/oWall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

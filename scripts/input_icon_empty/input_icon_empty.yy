@@ -6,7 +6,7 @@
   "name":"input_icon_empty",
   "parent":{
     "name":"Icons",
-    "path":"folders/(Plugins)/(Input)/(System)/Icons.yy",
+    "path":"folders/(System)/(Plugins)/(Input)/(System)/Icons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

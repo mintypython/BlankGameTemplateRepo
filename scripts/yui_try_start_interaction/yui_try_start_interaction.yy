@@ -6,7 +6,7 @@
   "name":"yui_try_start_interaction",
   "parent":{
     "name":"Interaction",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Interaction.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Interaction.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

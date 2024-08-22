@@ -6,7 +6,7 @@
   "name":"GsplParserError",
   "parent":{
     "name":"Parser",
-    "path":"folders/(Plugins)/(YUI)/Packages - gspl/Parser.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Parser.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

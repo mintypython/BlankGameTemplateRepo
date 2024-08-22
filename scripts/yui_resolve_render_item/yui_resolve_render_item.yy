@@ -6,7 +6,7 @@
   "name":"yui_resolve_render_item",
   "parent":{
     "name":"Render Items",
-    "path":"folders/(Plugins)/(YUI)/Packages - YUI/Render Items.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Render Items.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"GsplConditionalParselet",
   "parent":{
     "name":"Pratt",
-    "path":"folders/(Plugins)/(YUI)/Packages - gspl/Parser/Pratt.yy",
+    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Parser/Pratt.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",
