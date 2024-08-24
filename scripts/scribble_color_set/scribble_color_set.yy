@@ -6,7 +6,7 @@
   "name":"scribble_color_set",
   "parent":{
     "name":"Colours",
-    "path":"folders/(System)/(Plugins)/(Scribble)/Colours.yy",
+    "path":"folders/(System)/(Library)/(Scribble)/Colours.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

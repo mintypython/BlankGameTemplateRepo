@@ -6,7 +6,7 @@
   "name":"yui_string_concat",
   "parent":{
     "name":"string",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts/string.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/scripts/string.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

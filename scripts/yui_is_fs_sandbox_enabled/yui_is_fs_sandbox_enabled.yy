@@ -6,7 +6,7 @@
   "name":"yui_is_fs_sandbox_enabled",
   "parent":{
     "name":"scripts",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

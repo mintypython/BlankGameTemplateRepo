@@ -6,7 +6,7 @@
   "name":"yui_resolve_layout",
   "parent":{
     "name":"Layout",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Layout.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Layout.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

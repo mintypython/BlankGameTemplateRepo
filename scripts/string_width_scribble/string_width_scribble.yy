@@ -6,7 +6,7 @@
   "name":"string_width_scribble",
   "parent":{
     "name":"Quick Functions",
-    "path":"folders/(System)/(Plugins)/(Scribble)/Quick Functions.yy",
+    "path":"folders/(System)/(Library)/(Scribble)/Quick Functions.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

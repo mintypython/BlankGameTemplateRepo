@@ -6,7 +6,7 @@
   "name":"__input_system_tick",
   "parent":{
     "name":"Ticks",
-    "path":"folders/(System)/(Plugins)/(Input)/(System)/Ticks.yy",
+    "path":"folders/(System)/(Library)/(Input)/(System)/Ticks.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"__CanvasConfig",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"__CanvasConfig",
+  "parent":{
+    "name":"(Canvas)",
+    "path":"folders/(System)/(Library)/(Canvas).yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

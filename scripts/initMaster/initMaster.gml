@@ -1,9 +1,10 @@
+// Target Controls
 #macro DEV_MODE 0
 #macro Dev:DEV_MODE 1
-
 #macro DEMO_MODE 0
 #macro Demo:DEMO_MODE 1
 
+// Audio
 #macro MASTER_VOL 0.7
 #macro MUSIC_VOL 0.25
 #macro SOUND_VOL 0.9
@@ -11,10 +12,21 @@
 #macro Dev:MUSIC_VOL 0.0
 #macro Dev:SOUND_VOL 0.0
 
+// Display
 #macro SCREEN_W display_get_width()
 #macro SCREEN_H display_get_height()
+#macro WINDOW_W window_get_width()
+#macro WINDOW_H window_get_height()
 #macro FRAMERATE display_get_frequency()
+#macro BASE_W 1920
+#macro BASE_H 1080
+#macro VIEW view_camera[0]
+#macro VIEW_W camera_get_view_width(VIEW)
+#macro VIEW_H camera_get_view_height(VIEW)
+#macro VIEW_X camera_get_view_x(VIEW)
+#macro VIEW_Y camera_get_view_y(VIEW)
 
+// GUI
 #macro MENU_BUTT_ALPHA 0.8
 
 // Saving

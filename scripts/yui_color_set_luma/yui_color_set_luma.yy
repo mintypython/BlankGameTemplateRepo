@@ -6,7 +6,7 @@
   "name":"yui_color_set_luma",
   "parent":{
     "name":"color",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts/color.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/scripts/color.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

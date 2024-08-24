@@ -6,7 +6,7 @@
   "name":"yui_change_screen",
   "parent":{
     "name":"Handlers",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Event Handling/Handlers.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Event Handling/Handlers.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"__yui_init_live_reload",
   "parent":{
     "name":"Packages - YUI",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

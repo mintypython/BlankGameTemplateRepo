@@ -120,7 +120,7 @@
   "name":"yui_fnt_mono",
   "parent":{
     "name":"Fonts",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Fonts.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

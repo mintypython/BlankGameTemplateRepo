@@ -6,7 +6,7 @@
   "name":"input_binding_scan_abort",
   "parent":{
     "name":"07  Binding Scanner",
-    "path":"folders/(System)/(Plugins)/(Input)/07  Binding Scanner.yy",
+    "path":"folders/(System)/(Library)/(Input)/07  Binding Scanner.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

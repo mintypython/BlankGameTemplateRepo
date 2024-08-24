@@ -6,7 +6,7 @@
   "name":"GsplTokenDefinition",
   "parent":{
     "name":"Scanner",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Scanner.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - gspl/Scanner.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

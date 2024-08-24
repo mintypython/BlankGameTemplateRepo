@@ -6,7 +6,7 @@
   "name":"input_value_is_binding",
   "parent":{
     "name":"05  Binding Creators",
-    "path":"folders/(System)/(Plugins)/(Input)/05  Binding Creators.yy",
+    "path":"folders/(System)/(Library)/(Input)/05  Binding Creators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

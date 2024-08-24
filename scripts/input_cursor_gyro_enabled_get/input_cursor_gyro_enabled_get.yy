@@ -6,7 +6,7 @@
   "name":"input_cursor_gyro_enabled_get",
   "parent":{
     "name":"21  Gyro & Motion",
-    "path":"folders/(System)/(Plugins)/(Input)/21  Gyro & Motion.yy",
+    "path":"folders/(System)/(Library)/(Input)/21  Gyro & Motion.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

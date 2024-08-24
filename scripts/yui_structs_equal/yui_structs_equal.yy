@@ -6,7 +6,7 @@
   "name":"yui_structs_equal",
   "parent":{
     "name":"scripts",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

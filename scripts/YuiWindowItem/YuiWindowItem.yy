@@ -6,7 +6,7 @@
   "name":"YuiWindowItem",
   "parent":{
     "name":"Data",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Data.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Data.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

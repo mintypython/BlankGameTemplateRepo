@@ -112,7 +112,7 @@
   "name":"curveElastic",
   "parent":{
     "name":"Easing Curves",
-    "path":"folders/(System)/(Plugins)/(YUI)/Easing Curves.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Easing Curves.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

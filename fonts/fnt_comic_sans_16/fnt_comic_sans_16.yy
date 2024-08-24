@@ -120,7 +120,7 @@
   "name":"fnt_comic_sans_16",
   "parent":{
     "name":"Fonts",
-    "path":"folders/(System)/(Plugins)/(YUI)/YUI Example/Fonts.yy",
+    "path":"folders/(System)/(Library)/(YUI)/YUI Example/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

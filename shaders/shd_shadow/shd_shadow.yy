@@ -4,7 +4,7 @@
   "name":"shd_shadow",
   "parent":{
     "name":"Shaders",
-    "path":"folders/(System)/(Plugins)/(Lighting)/Shaders.yy",
+    "path":"folders/(System)/(Library)/(Lighting)/Shaders.yy",
   },
   "resourceType":"GMShader",
   "resourceVersion":"2.0",

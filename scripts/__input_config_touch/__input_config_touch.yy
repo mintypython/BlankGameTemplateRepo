@@ -6,7 +6,7 @@
   "name":"__input_config_touch",
   "parent":{
     "name":"00  Configuration - Please edit these scripts!",
-    "path":"folders/(System)/(Plugins)/(Input)/00  Configuration - Please edit these scripts!.yy",
+    "path":"folders/(System)/(Library)/(Input)/00  Configuration - Please edit these scripts!.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

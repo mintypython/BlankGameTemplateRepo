@@ -6,7 +6,7 @@
   "name":"InspectronConfig",
   "parent":{
     "name":"(YUI)",
-    "path":"folders/(System)/(Plugins)/(YUI).yy",
+    "path":"folders/(System)/(Library)/(YUI).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

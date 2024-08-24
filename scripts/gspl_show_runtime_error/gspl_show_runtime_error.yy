@@ -6,7 +6,7 @@
   "name":"gspl_show_runtime_error",
   "parent":{
     "name":"Execute",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Execute.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - gspl/Execute.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

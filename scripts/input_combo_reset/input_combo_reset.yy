@@ -6,7 +6,7 @@
   "name":"input_combo_reset",
   "parent":{
     "name":"27  Combos",
-    "path":"folders/(System)/(Plugins)/(Input)/27  Combos.yy",
+    "path":"folders/(System)/(Library)/(Input)/27  Combos.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

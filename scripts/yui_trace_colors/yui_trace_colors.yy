@@ -6,7 +6,7 @@
   "name":"yui_trace_colors",
   "parent":{
     "name":"Render Items",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Render Items.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Render Items.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

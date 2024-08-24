@@ -4,7 +4,7 @@
   "name":"_yui_sprite_credits",
   "parent":{
     "name":"Sprites",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Sprites.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Sprites.yy",
   },
   "resourceType":"GMNotes",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"input_color_reset",
   "parent":{
     "name":"20  Color",
-    "path":"folders/(System)/(Plugins)/(Input)/20  Color.yy",
+    "path":"folders/(System)/(Library)/(Input)/20  Color.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

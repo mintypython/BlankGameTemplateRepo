@@ -12,7 +12,7 @@
   "name":"yui_wave_curve",
   "parent":{
     "name":"Animation",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Animation.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Animation.yy",
   },
   "resourceType":"GMAnimCurve",
   "resourceVersion":"2.0",

@@ -6,7 +6,7 @@
   "name":"yui_resolve_nested_binding",
   "parent":{
     "name":"Binding",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Binding.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Binding.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

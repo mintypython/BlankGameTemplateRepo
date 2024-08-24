@@ -6,7 +6,7 @@
   "name":"scribble_whitelist_sprite",
   "parent":{
     "name":"Miscellaneous",
-    "path":"folders/(System)/(Plugins)/(Scribble)/Miscellaneous.yy",
+    "path":"folders/(System)/(Library)/(Scribble)/Miscellaneous.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"test",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/test.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - gspl/test.yy",
   },
   "parentObjectId":null,
   "persistent":false,

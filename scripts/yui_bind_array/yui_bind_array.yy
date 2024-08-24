@@ -6,7 +6,7 @@
   "name":"yui_bind_array",
   "parent":{
     "name":"Binding",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Binding.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Binding.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

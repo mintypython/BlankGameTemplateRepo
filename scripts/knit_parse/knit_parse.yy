@@ -6,7 +6,7 @@
   "name":"knit_parse",
   "parent":{
     "name":"Knit",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Languages/Knit.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - gspl/Languages/Knit.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

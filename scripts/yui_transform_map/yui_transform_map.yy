@@ -6,7 +6,7 @@
   "name":"yui_transform_map",
   "parent":{
     "name":"Transform",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Transform.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Transform.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

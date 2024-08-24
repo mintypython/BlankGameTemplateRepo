@@ -6,7 +6,7 @@
   "name":"input_join_is_finished",
   "parent":{
     "name":"17  Source Modes",
-    "path":"folders/(System)/(Plugins)/(Input)/17  Source Modes.yy",
+    "path":"folders/(System)/(Library)/(Input)/17  Source Modes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

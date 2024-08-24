@@ -6,7 +6,7 @@
   "name":"yui_init_theme",
   "parent":{
     "name":"Themes",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Themes.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Themes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

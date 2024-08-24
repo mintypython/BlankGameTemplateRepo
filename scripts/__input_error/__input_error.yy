@@ -6,7 +6,7 @@
   "name":"__input_error",
   "parent":{
     "name":"(System)",
-    "path":"folders/(System)/(Plugins)/(Input)/(System).yy",
+    "path":"folders/(System)/(Library)/(Input)/(System).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

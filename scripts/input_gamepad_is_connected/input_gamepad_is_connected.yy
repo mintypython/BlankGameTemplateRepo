@@ -6,7 +6,7 @@
   "name":"input_gamepad_is_connected",
   "parent":{
     "name":"25  Gamepads (Direct)",
-    "path":"folders/(System)/(Plugins)/(Input)/25  Gamepads (Direct).yy",
+    "path":"folders/(System)/(Library)/(Input)/25  Gamepads (Direct).yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

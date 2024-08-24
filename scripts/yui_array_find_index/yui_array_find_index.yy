@@ -6,7 +6,7 @@
   "name":"yui_array_find_index",
   "parent":{
     "name":"util",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/scripts/util.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/scripts/util.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

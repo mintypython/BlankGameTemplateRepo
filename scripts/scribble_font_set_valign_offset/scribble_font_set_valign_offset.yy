@@ -6,7 +6,7 @@
   "name":"scribble_font_set_valign_offset",
   "parent":{
     "name":"Fonts",
-    "path":"folders/(System)/(Plugins)/(Scribble)/Fonts.yy",
+    "path":"folders/(System)/(Library)/(Scribble)/Fonts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

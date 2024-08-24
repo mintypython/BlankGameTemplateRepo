@@ -6,7 +6,7 @@
   "name":"yui_invoke_event",
   "parent":{
     "name":"Event Handling",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Event Handling.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Event Handling.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

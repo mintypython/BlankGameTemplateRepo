@@ -6,7 +6,7 @@
   "name":"input_icon_touch",
   "parent":{
     "name":"Icons",
-    "path":"folders/(System)/(Plugins)/(Input)/(System)/Icons.yy",
+    "path":"folders/(System)/(Library)/(Input)/(System)/Icons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

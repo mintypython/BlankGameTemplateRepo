@@ -6,7 +6,7 @@
   "name":"GsplIteratorTemplate",
   "parent":{
     "name":"Iterators",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - gspl/Execute/Iterators.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - gspl/Execute/Iterators.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

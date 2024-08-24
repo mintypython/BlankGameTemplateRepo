@@ -6,7 +6,7 @@
   "name":"gumshoe",
   "parent":{
     "name":"Cabinet",
-    "path":"folders/(System)/(Plugins)/(YUI)/Cabinet.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Cabinet.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

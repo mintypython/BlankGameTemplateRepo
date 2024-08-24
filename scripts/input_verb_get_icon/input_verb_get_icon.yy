@@ -6,7 +6,7 @@
   "name":"input_verb_get_icon",
   "parent":{
     "name":"08  Icons",
-    "path":"folders/(System)/(Plugins)/(Input)/08  Icons.yy",
+    "path":"folders/(System)/(Library)/(Input)/08  Icons.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

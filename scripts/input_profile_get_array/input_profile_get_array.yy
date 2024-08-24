@@ -6,7 +6,7 @@
   "name":"input_profile_get_array",
   "parent":{
     "name":"16  Profiles",
-    "path":"folders/(System)/(Plugins)/(Input)/16  Profiles.yy",
+    "path":"folders/(System)/(Library)/(Input)/16  Profiles.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

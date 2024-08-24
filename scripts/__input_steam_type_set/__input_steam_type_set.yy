@@ -6,7 +6,7 @@
   "name":"__input_steam_type_set",
   "parent":{
     "name":"Gamepads and Steam",
-    "path":"folders/(System)/(Plugins)/(Input)/(System)/Gamepads and Steam.yy",
+    "path":"folders/(System)/(Library)/(Input)/(System)/Gamepads and Steam.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

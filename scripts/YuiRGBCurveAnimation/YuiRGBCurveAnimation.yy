@@ -6,7 +6,7 @@
   "name":"YuiRGBCurveAnimation",
   "parent":{
     "name":"Animation",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Animation.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Animation.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

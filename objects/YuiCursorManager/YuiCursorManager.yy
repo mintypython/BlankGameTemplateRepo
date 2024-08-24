@@ -26,7 +26,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Cursor",
-    "path":"folders/(System)/(Plugins)/(YUI)/Packages - YUI/Cursor.yy",
+    "path":"folders/(System)/(Library)/(YUI)/Packages - YUI/Cursor.yy",
   },
   "parentObjectId":null,
   "persistent":true,
