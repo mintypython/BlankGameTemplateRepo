@@ -15,8 +15,8 @@
     "path":"folders/(Main Menu)/Objects/3. Video.yy",
   },
   "parentObjectId":{
-    "name":"oListParent",
-    "path":"objects/oListParent/oListParent.yy",
+    "name":"oListItemParent",
+    "path":"objects/oListItemParent/oListItemParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

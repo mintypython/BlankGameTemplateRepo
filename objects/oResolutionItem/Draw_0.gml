@@ -2,5 +2,4 @@
 draw_self()
 
 // Draw text
-draw_set_font(global.A20)
-drawCenterText(x, y, string_hash_to_newline(string(buttonText)))
+scribble_draw_text_ext(x, y, string_hash_to_newline(string(buttonText)), MENU_LIST_SCALE, c_white, sButtonThin)

@@ -4,15 +4,11 @@ if (global.pause == 1) {
 	draw_set_color(c_black)
 	draw_set_alpha(0.25)
 	draw_rectangle(0, 0, global.width, global.height, false)
+	draw_set_color(c_white)
 	
 	// Pause Menu Title Font
-	draw_set_font(global.A60)
-	draw_set_color(c_white)
 	draw_set_alpha(1)
-	drawCenterText(global.width / 2, global.height / 3, locale("paused"))
-	
-	// Pause Menu Item Font
-	draw_set_font(global.A30)
+	scribble_draw_text_ext(global.width / 2, global.height / 3, locale("paused"), MENU_SUBTITLE_SCALE)
 
 	#region Pause Menu
 	// Line spacing

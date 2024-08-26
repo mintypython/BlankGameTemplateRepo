@@ -1,13 +1,14 @@
 #region Delta, Background Update, FPS Update
-// Delta Time
+// Delta Time Update
 global.deltaActual = delta_time / 1000000
 global.deltaMulti = global.deltaActual / global.deltaTarget
 
 // Background Animation Delta
 var _bg = layer_get_id("Background")
+var _dt = global.deltaMulti
 if layer_get_hspeed(_bg) != 0 or layer_get_vspeed(_bg) != 0 {
-	layer_hspeed(_bg, 0.5 * global.deltaMulti)
-	layer_vspeed(_bg, 0.5 * global.deltaMulti)
+	layer_hspeed(_bg, 0.5 * _dt)
+	layer_vspeed(_bg, 0.5 * _dt)
 }
 
 // Update FPS

@@ -4,8 +4,10 @@ var _originY = y - (sprite_height / 2)
 
 #region Mouse Controls
 if global.input == 0 {
-	if mouse_x > _originX and mouse_x < _originX + sprite_width 
-		and mouse_y > _originY and mouse_y < _originY + sprite_height { // Mouse Enter Event Constant
+	if mouse_x > _originX 
+		and mouse_x < _originX + sprite_width 
+		and mouse_y > _originY 
+		and mouse_y < _originY + sprite_height { // Mouse Enter Event Constant
 
 	   // Raises the transparency when the cursor is hovering the button
 		image_alpha = 1
@@ -21,7 +23,7 @@ if global.input == 0 {
 	} else { // Mouse Leave Event
 
 	   // Resets the transparency when the cursor leaves the button
-		image_alpha = MENU_BUTT_ALPHA
+		image_alpha = MENU_BUTTON_ALPHA
 
 		// Toggle hovering and runOnce flag off when leaving
 		hovering = false
@@ -33,7 +35,7 @@ if global.input == 0 {
 		// Lower the position of the button slightly when it's clicked on
 		y = ystart + 4
 
-		// Start a timer for 10 frames that will reset the position of the button
+		// Start a timer for 10 frames that will reset the position of the button and run it's purpose.
 		alarm[0] = 10
 
 		// Play sound when clicking button
@@ -60,7 +62,7 @@ if global.input == 1 {
 	} else if selected == 0 { // Deselection Event Constant
 
 	   // Resets the transparency when the controller selects something else
-		image_alpha = MENU_BUTT_ALPHA
+		image_alpha = MENU_BUTTON_ALPHA
 
 		// Toggle  off when leaving
 		hovering = false

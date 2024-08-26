@@ -1,18 +1,14 @@
 #region Display Game Title / Subtitle / Version Number
 
 // Draw text
-draw_set_font(global.A60)
-if room != rGameRoom drawCenterText(room_width / 2, 0 + (room_height * 0.059), locale("game_title"))
+if room != rGameRoom scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.059), locale("game_title"), MENU_TITLE_SCALE)
 
-draw_set_font(global.A30)
-if room == rSettings drawCenterText(room_width / 2, 0 + (room_height * 0.162), locale("settings"))
-else if room == rAudio drawCenterText(room_width / 2, 0 + (room_height * 0.162), locale("audio"))
-else if room == rVideo drawCenterText(room_width / 2, 0 + (room_height * 0.162), locale("video"))
-else if room == rGameplay drawCenterText(room_width / 2, 0 + (room_height * 0.162), locale("gameplay"))
-else if room == rControls drawCenterText(room_width / 2, 0 + (room_height * 0.162), locale("controls"))
+if room == rSettings scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.162), locale("settings"), MENU_SUBTITLE_SCALE)
+else if room == rAudio scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.162), locale("audio"), MENU_SUBTITLE_SCALE)
+else if room == rVideo scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.162), locale("video"), MENU_SUBTITLE_SCALE)
+else if room == rGameplay scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.162), locale("gameplay"), MENU_SUBTITLE_SCALE)
+else if room == rControls scribble_draw_text_ext(room_width / 2, 0 + (room_height * 0.162), locale("controls"), MENU_SUBTITLE_SCALE)
 
-draw_set_font(global.A11)
-drawCenterText(room_width - 48, room_height - (room_height * 0.0148), "v0.0.5")
+scribble_draw_text_ext(room_width - 48, room_height - (room_height * 0.0148), "v0.0.5", MENU_SMALL_SCALE)
 
 #endregion
-

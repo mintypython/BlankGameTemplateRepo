@@ -27,7 +27,15 @@
 #macro VIEW_Y camera_get_view_y(VIEW)
 
 // GUI
-#macro MENU_BUTT_ALPHA 0.8
+#macro MENU_BUTTON_ALPHA 0.8
+
+// Font
+#macro DEFAULT_FONT "fUbuntu"
+#macro MENU_TITLE_SCALE 0.45
+#macro MENU_SUBTITLE_SCALE 0.30
+#macro MENU_BUTTON_SCALE 0.25
+#macro MENU_LIST_SCALE 0.2
+#macro MENU_SMALL_SCALE 0.12
 
 // Saving
 global.saveDir = game_save_id
@@ -68,11 +76,5 @@ global.pause = 0
 // Switching between KBM and controller (KBM = 0, Controller = 1)
 global.input = 1
 
-// Fonts
-global.A60 = font_add("ArialUni.ttf", 60, 0, 0, 0, 255)
-global.A40 = font_add("ArialUni.ttf", 40, 0, 0, 0, 255)
-global.A30 = font_add("ArialUni.ttf", 30, 0, 0, 0, 255)
-global.A26 = font_add("ArialUni.ttf", 26, 0, 0, 0, 255)
-global.A24 = font_add("ArialUni.ttf", 24, 0, 0, 0, 255)
-global.A20 = font_add("ArialUni.ttf", 20, 0, 0, 0, 255)
-global.A11 = font_add("ArialUni.ttf", 11, 0, 0, 0, 255)
+// Debug Views
+global.debugViewGame = 0

@@ -17,7 +17,7 @@ function print() {
 	}
 }
 
-#macro trace __trace(_GMFILE_ + "/" + _GMFUNCTION_ + ":" + string(_GMLINE_) + ": ")
+// #macro trace __trace(_GMFILE_ + "/" + _GMFUNCTION_ + ":" + string(_GMLINE_) + ": ")
 /// @desc This function creates a trace method for debugging and displaying location-specific debug messages.
 function __trace(_location) {
 	// credits: "Red", "JuJu Adams"

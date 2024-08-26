@@ -13,7 +13,7 @@ if global.input == 1 {
 	} else if selected == 0 { // Deselection Event Constant
 
 	   // Resets the transparency when the controller selects something else
-		image_alpha = MENU_BUTT_ALPHA
+		image_alpha = MENU_BUTTON_ALPHA
 
 		// Toggle  off when leaving
 		runOnce = 0

@@ -15,14 +15,33 @@ function Quad(_vb,_x1,_y1,_x2,_y2){
 
 // Construct the vertex buffer with every wall
 // Instead of using the four edges as the walls, we use the diagonals instead (Optimization)
-vertex_begin(vb,vf)
+
+vertex_begin(vb, vf)
 var _vb = vb
-with(oWall) {
-	Quad(_vb,x,y,x+sprite_width,y+sprite_height) // Negative Slope Diagonal Wall
-	Quad(_vb,x+sprite_width,y,x,y+sprite_height) // Positive Slope Diagonal Wall
-}
-with(oTriWall) {
-	Quad(_vb, x, y, x + sprite_width, y + sprite_height)
-	Quad(_vb, x, y + sprite_height, midX, midY)
+var _tag = tag_get_asset_ids("solid", asset_object)
+var _isize = array_length(_tag)
+
+for (var _i = 0; _i < _isize; _i++) {
+    var _object = _tag[_i]
+    with (_object) {
+        Quad(_vb, x, y, x + sprite_width, y + sprite_height)
+        Quad(_vb, x + sprite_width, y, x, y + sprite_height)
+    }
 }
 vertex_end(vb)
+
+/*vertex_begin(vb,vf)
+var _vb = vb
+var _tag = tag_get_asset_ids("solid", asset_object)
+var _i = 0
+var _isize = array_length(_tag)
+repeat(_isize) {
+	var _object = _tag[_i]
+	_i++
+	with(_object) {
+		Quad(_vb,x,y,x+sprite_width,y+sprite_height)
+		Quad(_vb,x+sprite_width,y,x,y+sprite_height)
+	}
+}
+vertex_end(vb)*/
+
