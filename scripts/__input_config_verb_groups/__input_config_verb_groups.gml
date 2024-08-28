@@ -14,7 +14,7 @@
 function __input_config_verb_groups()
 {
 	return {
-		menu: ["up", "down", "left", "right", "pause", "accept", "back"],
+		menu: ["up", "down", "left", "right", "pause", "accept", "back", "leftclick"],
 		game: ["moveUp", "moveDown", "moveLeft", "moveRight", "jump", "run", "interact", "inventory"],
 	}
 }

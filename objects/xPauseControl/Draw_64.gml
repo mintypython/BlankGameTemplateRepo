@@ -61,8 +61,8 @@ if (global.pause == 1) {
 			_struct.wr = string_width(_str2 + " ")
 		}
 	
-		// Is mouse hovering over menu entry?
-		var _hoveringText = 0
+		// Is mouse mouseHovered over menu entry?
+		var _mouseHoveredText = 0
 		// Control the menu?
 		if mouse_y >= menuY and mouse_y <= menuY + _space * _size and global.input == KBM {
 			// Check which item is hovered
@@ -70,7 +70,7 @@ if (global.pause == 1) {
 				// Check X position
 				if mouse_x > menuX - _struct.wl and mouse_x < menuX + _struct.wr {
 					_col = c_white
-					_hoveringText = 1
+					_mouseHoveredText = 1
 				}
 			}
 		}
@@ -91,7 +91,7 @@ if (global.pause == 1) {
 			if _leftclickHeld _leftclick = 1
 			
 			// Clicking and over text? 
-			if  _hoveringText and _leftclick {
+			if  _mouseHoveredText and _leftclick {
 				// Set menu select true
 				var _select = 1
 				var _hmove = 0

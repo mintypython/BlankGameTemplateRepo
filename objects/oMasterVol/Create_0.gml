@@ -11,7 +11,8 @@ slider.type = SLIDER_TYPE_MASTER
 slider.owner = id
 
 // Default selection for controller navigation
-selected = true
+controllerHovered = true
+controllerHoveredBase = true
 
 // Muting
 muted = false

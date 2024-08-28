@@ -1,7 +1,7 @@
 // Initialize variables
 value = 0
 maxValue = 1
-selected = false
+mouseSelected = false
 
 // Stop the sprite from animating
 image_speed = 0

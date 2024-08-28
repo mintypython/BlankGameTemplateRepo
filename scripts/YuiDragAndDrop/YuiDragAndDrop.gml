@@ -74,7 +74,7 @@ function YuiDragAndDrop(_props, _resources) constructor {
 		};
 		
 		// this is the resolved target of the interaction,
-		// aka the one thing we're hovering over (if any)
+		// aka the one thing we're mouseHovered over (if any)
 		target = {
 			data: undefined,
 			hover: undefined,

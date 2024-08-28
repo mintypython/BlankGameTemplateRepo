@@ -1,8 +1,3 @@
-// Draw itself
-draw_self() 
-
-scribble_draw_text_ext(x, y, buttonText, MENU_BUTTON_SCALE, c_white, sButton)
-
 if DEV_MODE {
 	var _tw = string_width("controllerHovered: " + string(controllerHovered))
 	var _th = string_height("controllerHovered: " + string(controllerHovered))

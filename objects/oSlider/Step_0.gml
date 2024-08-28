@@ -4,12 +4,12 @@ if global.input == KBM {
 		var _buttonX = x + sprite_width * value
 		var _buttonY = y
 		var _buttonR = sprite_get_width(sSliderButton) / 2
-		if point_in_circle(mouse_x, mouse_y, _buttonX, _buttonY, _buttonR) {
-			selected = true
+		if position_meeting(mouse_x, mouse_y, id) {
+			mouseSelected = true
 		}
-	} else selected = false
+	} else mouseSelected = false
 
-	if selected {
+	if mouseSelected {
 		value = clamp((mouse_x - x) / sprite_width, 0, maxValue)
 		if type == SLIDER_TYPE_MASTER {
 			global.masterVolume = value
@@ -28,7 +28,7 @@ if global.input == KBM {
 
 // Controller Support
 if global.input == CONTROLLER {
-	if owner.selected {
+	if owner.controllerHovered {
 		if type == SLIDER_TYPE_MASTER {
 			global.masterVolume = value
 			owner.previousValue = value

@@ -17,6 +17,8 @@ function __input_config_verbs()
         {	
 			// Menu
 			leftclick: input_binding_mouse_button(mb_left),
+			left:  [input_binding_key("A"),  input_binding_key(vk_left)],
+            right: [input_binding_key("D"), input_binding_key(vk_right)],
             pause: input_binding_key(vk_escape),
 
 			// Player specific

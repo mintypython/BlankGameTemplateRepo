@@ -11,7 +11,7 @@ with (oResolutionItem) instance_destroy()
 // Clear array list of items after selection is made
 with (oResolutionList) {
 	items = []
-	selected = true
+	controllerHovered = true
 }
 
 // Set global resolution position

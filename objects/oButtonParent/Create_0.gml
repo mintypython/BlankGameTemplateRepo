@@ -5,7 +5,8 @@ buttonText = ""
 runOnce = false
 
 // Check if the button is hovered (MOUSE)
-hovering = false
+mouseHovered = false
 
-// Check if the button is selected (CONTROLLER)
-selected = false
+// Check if the button is controllerHovered (CONTROLLER)
+controllerHovered = false
+controllerHoveredBase = controllerHovered

@@ -9,13 +9,13 @@ if global.input == KBM {
 		and mouse_y > _originY 
 		and mouse_y < _originY + sprite_height { // Mouse Enter Event Constant
 
-	   // Raises the transparency when the cursor is hovering the button
+	   // Raises the transparency when the cursor is mouseHovered the button
 		image_alpha = 1
 
-		// Toggle hovering when hovering
-		hovering = true
+		// Toggle mouseHovered when mouseHovered
+		mouseHovered = true
 
-		// Play sound when hovering button
+		// Play sound when mouseHovered button
 		if runOnce == false playSound(sndMenuHover)
 		// Run only once flag
 		runOnce = true
@@ -25,13 +25,13 @@ if global.input == KBM {
 	   // Resets the transparency when the cursor leaves the button
 		image_alpha = MENU_BUTTON_ALPHA
 
-		// Toggle hovering and runOnce flag off when leaving
-		hovering = false
+		// Toggle mouseHovered and runOnce flag off when leaving
+		mouseHovered = false
 		runOnce = false
 	}
 
 	// Mouse Clicking Effects
-	if hovering and input_check_pressed("leftclick") {
+	if mouseHovered and input_check_pressed("leftclick") {
 		// Lower the position of the button slightly when it's clicked on
 		y = ystart + 4
 
@@ -46,36 +46,35 @@ if global.input == KBM {
 
 #region Controller Support
 if global.input == CONTROLLER {
-	if selected == true{ // Selection Event Constant
+	if controllerHovered == true { // Selection Event Constant
 
-	   // Raises the transparency when the button is selected
+	   // Raises the transparency when the button is controllerHovered
 		image_alpha = 1
 	
-		// Toggle hovering when hovering
-		hovering = true
+		// Toggle mouseHovered when mouseHovered
+		controllerHovered = true
 
-		// Play sound when hovering button
+		// Play sound when mouseHovered button
 		if runOnce == false playSound(sndMenuHover)
 		// Run only once flag
 		runOnce = true
 
-	} else if selected == false { // Deselection Event Constant
+	} else if controllerHovered == false { // Deselection Event Constant
 
 	   // Resets the transparency when the controller selects something else
 		image_alpha = MENU_BUTTON_ALPHA
 
 		// Toggle  off when leaving
-		hovering = false
+		controllerHovered = false
 		runOnce = false
-		selected = false
 	}
 	
-	// Controller A/X accept
-	if hovering and input_check_pressed("accept") {
+	// Controller A accept
+	if controllerHovered and input_check_pressed("accept") {
 		// Lower the position of the button slightly when it's clicked on
 		y = ystart + 4
 
-		// Start a timer for 10 frames that will reset the position of the button
+		// Start a timer for 10 frames that will reset the position of the button and run its' action
 		alarm[0] = 10
 
 		// Play sound when clicking button

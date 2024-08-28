@@ -11,7 +11,7 @@ with (oLanguageItem) instance_destroy()
 // Clear array list of items after selection is made
 with (oLanguageList) {
 	items = []
-	selected = true
+	controllerHovered = true
 }
 
 // Set locale position and load the translations
@@ -20,4 +20,4 @@ loadLang(position)
 
 // Reload room with new language
 room_goto(rMainMenu)
-oButtonPlay.selected = false
+oButtonPlay.controllerHovered = false

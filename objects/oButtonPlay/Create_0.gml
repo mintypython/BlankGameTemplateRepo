@@ -5,4 +5,5 @@ event_inherited()
 buttonText = locale("play")
 
 // Default selection for controller navigation
-selected = true
+controllerHovered = true
+controllerHoveredBase = true
