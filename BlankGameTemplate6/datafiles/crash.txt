@@ -1,0 +1,5 @@
+{ line : 30, stacktrace : [ "gml_Object_oPauseControl_Draw_77 (line 30)" ], message : "Trying to use a depth buffer of a surface target that does not exist.", longMessage : "ERROR in action number 1
+of Draw Event for object oPauseControl:
+Trying to use a depth buffer of a surface target that does not exist.
+ at gml_Object_oPauseControl_Draw_77 (line 30) - 		surface_set_target(pauseSurf, 0)
+", script : "gml_Object_oPauseControl_Draw_77" }

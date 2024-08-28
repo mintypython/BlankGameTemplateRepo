@@ -1,5 +1,0 @@
-{ line : 28, stacktrace : [ "gml_Object_oLightSetup_Step_0 (line 28)" ], message : "Push :: Execution Error - Variable Index [1] out of range [1] - -7._tag(101255,1)", longMessage : "ERROR in action number 1
-of  Step Event0 for object oLightSetup:
-Push :: Execution Error - Variable Index [1] out of range [1] - -7._tag(101255,1)
- at gml_Object_oLightSetup_Step_0 (line 28) - with(_tag[_i]) {
-", script : "gml_Object_oLightSetup_Step_0" }
