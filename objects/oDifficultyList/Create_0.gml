@@ -11,7 +11,7 @@ diffList = [locale("easy"), locale("normal"), locale("hard")]
 position = 5
 
 // Default selection for controller navigation
-selected = 1
+selected = true
 
 // Init item to create 
 item = 0

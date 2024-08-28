@@ -3,7 +3,6 @@
   "%Name":"oResolutionItem",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
@@ -15,8 +14,8 @@
     "path":"folders/(Main Menu)/Objects/3. Video.yy",
   },
   "parentObjectId":{
-    "name":"oListItemParent",
-    "path":"objects/oListItemParent/oListItemParent.yy",
+    "name":"oButtonParent",
+    "path":"objects/oButtonParent/oButtonParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

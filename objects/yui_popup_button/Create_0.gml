@@ -1,7 +1,7 @@
 /// @description 
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 is_popup_visible = false;
 popup_item = undefined;

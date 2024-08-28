@@ -2,8 +2,8 @@
 event_inherited()
 
 // Set the menu text to that of this menu item
-owner.buttonText = other.buttonText
-owner.position = other.position
+owner.buttonText = buttonText
+owner.position = position
 
 // Destroy this item and all others after selection is made
 with (oLanguageItem) instance_destroy()
@@ -11,7 +11,7 @@ with (oLanguageItem) instance_destroy()
 // Clear array list of items after selection is made
 with (oLanguageList) {
 	items = []
-	selected = 1
+	selected = true
 }
 
 // Set locale position and load the translations
@@ -20,4 +20,4 @@ loadLang(position)
 
 // Reload room with new language
 room_goto(rMainMenu)
-oButtonPlay.selected = 0
+oButtonPlay.selected = false

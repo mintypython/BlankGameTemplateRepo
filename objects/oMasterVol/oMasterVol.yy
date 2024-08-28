@@ -4,6 +4,8 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"oMasterVol",
@@ -13,8 +15,8 @@
     "path":"folders/(Main Menu)/Objects/2. Audio.yy",
   },
   "parentObjectId":{
-    "name":"oSliderParent",
-    "path":"objects/oSliderParent/oSliderParent.yy",
+    "name":"oButtonParent",
+    "path":"objects/oButtonParent/oButtonParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

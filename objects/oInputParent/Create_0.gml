@@ -1,5 +1,5 @@
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // Verb for the action this button controls
 action = ""

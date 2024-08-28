@@ -7,5 +7,9 @@ buttonText = locale("music")
 // Create sliders to the right
 slider = instance_create_layer(x + (sprite_width / 2) + 32, y, "Instances", oSlider)
 slider.value = global.musicVolume
-slider.type = 1
+slider.type = SLIDER_TYPE_MUSIC
 slider.owner = id
+
+// Muting
+muted = false
+previousValue = slider.value

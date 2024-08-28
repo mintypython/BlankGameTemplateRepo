@@ -46,15 +46,15 @@ if audio_group_is_loaded(agMusic) {
 #region Controller / KBM Detection
 
 // Draw custom mouse cursor or not
-/*if global.input == 0 cursor_sprite = sCursor
-else if global.input == 1 cursor_sprite = cr_none*/
+/*if global.input == KBM cursor_sprite = sCursor
+else if global.input == CONTROLLER cursor_sprite = cr_none*/
 
 // Switch back to KBM if the mouse moves or any keyboard key is pressed
 if ((mouse_x != xx) 
 	or (mouse_y != yy) 
 	or keyboard_check_pressed(vk_anykey)) 
-	and global.input == 1 {
-		global.input = 0
+	and global.input == CONTROLLER {
+		global.input = KBM
 }
 // Update previous mouse position to the new current position
 xx = mouse_x;
@@ -64,157 +64,121 @@ yy = mouse_y;
 var _controller = input_source_detect_input(INPUT_GAMEPAD)
 
 // Turn the global controller flag on when the controller is used, if it's off already
-if _controller and global.input == 0 global.input = 1 
+if _controller and global.input == KBM global.input = CONTROLLER 
 
 
 #endregion
 
 #region Controller Navigation
-if global.input == 1 {
+if global.input == CONTROLLER {
 	
 	#region Main Menu
 		if room == rMainMenu { // If the controller is active in the main menu
 
-			if oButtonPlay.selected == 1 and input_check_pressed("down") { // Play
-				oButtonPlay.selected = 0
-				oButtonSettings.selected = 1
+			if oButtonPlay.selected == true and input_check_pressed("down") { // Play
+				oButtonPlay.selected = false
+				oButtonSettings.selected = true
 			}
-			else if oButtonSettings.selected == 1 and input_check_pressed("up") { // Settings
-				oButtonSettings.selected = 0
-				oButtonPlay.selected = 1
+			else if oButtonSettings.selected == true and input_check_pressed("up") { // Settings
+				oButtonSettings.selected = false
+				oButtonPlay.selected = true
 		
 			}
-			else if oButtonSettings.selected == 1 and input_check_pressed("down") { // Settings
-				oButtonSettings.selected = 0
-				oButtonQuit.selected = 1
+			else if oButtonSettings.selected == true and input_check_pressed("down") { // Settings
+				oButtonSettings.selected = false
+				oButtonQuit.selected = true
 			}
-			else if oButtonQuit.selected == 1 and input_check_pressed("up") { // Quit
-				oButtonQuit.selected = 0
-				oButtonSettings.selected = 1
+			else if oButtonQuit.selected == true and input_check_pressed("up") { // Quit
+				oButtonQuit.selected = false
+				oButtonSettings.selected = true
 			}
-			else if oLanguageList.selected == 1 and input_check_pressed("left") { // Language List
-				oLanguageList.selected = 0
+			else if oLanguageList.selected == true and input_check_pressed("left") { // Language List
+				oLanguageList.selected = false
 				with oLanguageItem instance_destroy()
-				oButtonPlay.selected = 1
+				oButtonPlay.selected = true
 			}
-			else if oButtonPlay.selected == 1 and input_check_pressed("right") { // Play
-				oButtonPlay.selected = 0
-				oLanguageList.selected = 1
+			else if oButtonPlay.selected == true and input_check_pressed("right") { // Play
+				oButtonPlay.selected = false
+				oLanguageList.selected = true
 			}
-			else if oButtonSettings.selected == 1 and input_check_pressed("right") { // Settings
-				oButtonSettings.selected = 0
-				oLanguageList.selected = 1
+			else if oButtonSettings.selected == true and input_check_pressed("right") { // Settings
+				oButtonSettings.selected = false
+				oLanguageList.selected = true
 		
 			}
-			else if oButtonQuit.selected == 1 and input_check_pressed("right") { // Quit
-				oButtonQuit.selected = 0
-				oLanguageList.selected = 1
+			else if oButtonQuit.selected == true and input_check_pressed("right") { // Quit
+				oButtonQuit.selected = false
+				oLanguageList.selected = true
 			}
 			
 			
 			// Language selection
 			if instance_exists(oLanguageItem) {
 				
-				if oLanguageList.selected == 1 and input_check_pressed("up") { // Language List
-					oLanguageList.selected = 0
-					oLanguageList.items[0].selected = 1
+				if oLanguageList.selected == true and input_check_pressed("up") { // Language List
+					oLanguageList.selected = false
+					oLanguageList.items[0].selected = true
 				}
 
-				else if oLanguageList.items[0].selected == 1 and input_check_pressed("down") { // Item 0
-					oLanguageList.items[0].selected = 0
-					oLanguageList.selected = 1
+				else if oLanguageList.items[0].selected == true and input_check_pressed("down") { // Item 0
+					oLanguageList.items[0].selected = false
+					oLanguageList.selected = true
 				}
 
-				else if oLanguageList.items[0].selected == 1 and input_check_pressed("up") { // Item 0
-					oLanguageList.items[0].selected = 0
-					oLanguageList.items[1].selected = 1
+				else if oLanguageList.items[0].selected == true and input_check_pressed("up") { // Item 0
+					oLanguageList.items[0].selected = false
+					oLanguageList.items[1].selected = true
 				}
 			
-				else if oLanguageList.items[1].selected == 1 and input_check_pressed("down") { // Item 1
-					oLanguageList.items[1].selected = 0
-					oLanguageList.items[0].selected = 1
+				else if oLanguageList.items[1].selected == true and input_check_pressed("down") { // Item 1
+					oLanguageList.items[1].selected = false
+					oLanguageList.items[0].selected = true
 				}
 
-				else if oLanguageList.items[1].selected == 1 and input_check_pressed("up") { // Item 1
-					oLanguageList.items[1].selected = 0
-					oLanguageList.items[2].selected = 1
+				else if oLanguageList.items[1].selected == true and input_check_pressed("up") { // Item 1
+					oLanguageList.items[1].selected = false
+					oLanguageList.items[2].selected = true
 				}
 			
-				else if oLanguageList.items[2].selected == 1 and input_check_pressed("down") { // Item 2
-					oLanguageList.items[2].selected = 0
-					oLanguageList.items[1].selected = 1
+				else if oLanguageList.items[2].selected == true and input_check_pressed("down") { // Item 2
+					oLanguageList.items[2].selected = false
+					oLanguageList.items[1].selected = true
 				}
 
-				else if oLanguageList.items[2].selected == 1 and input_check_pressed("up") { // Item 2
-					oLanguageList.items[2].selected = 0
-					oLanguageList.items[3].selected = 1
+				else if oLanguageList.items[2].selected == true and input_check_pressed("up") { // Item 2
+					oLanguageList.items[2].selected = false
+					oLanguageList.items[3].selected = true
 				}
 				
-				else if oLanguageList.items[3].selected == 1 and input_check_pressed("down") { // Item 3
-					oLanguageList.items[3].selected = 0
-					oLanguageList.items[2].selected = 1
+				else if oLanguageList.items[3].selected == true and input_check_pressed("down") { // Item 3
+					oLanguageList.items[3].selected = false
+					oLanguageList.items[2].selected = true
 				}
 
-				else if oLanguageList.items[3].selected == 1 and input_check_pressed("up") { // Item 3
-					oLanguageList.items[3].selected = 0
-					oLanguageList.items[4].selected = 1
+				else if oLanguageList.items[3].selected == true and input_check_pressed("up") { // Item 3
+					oLanguageList.items[3].selected = false
+					oLanguageList.items[4].selected = true
 				}
 				
-				else if oLanguageList.items[4].selected == 1 and input_check_pressed("down") { // Item 4
-					oLanguageList.items[4].selected = 0
-					oLanguageList.items[3].selected = 1
+				else if oLanguageList.items[4].selected == true and input_check_pressed("down") { // Item 4
+					oLanguageList.items[4].selected = false
+					oLanguageList.items[3].selected = true
 				}
 
-				else if oLanguageList.items[4].selected == 1 and input_check_pressed("up") { // Item 4
-					oLanguageList.items[4].selected = 0
-					oLanguageList.items[5].selected = 1
+				else if oLanguageList.items[4].selected == true and input_check_pressed("up") { // Item 4
+					oLanguageList.items[4].selected = false
+					oLanguageList.items[5].selected = true
 				}
 			
-				else if oLanguageList.items[5].selected == 1 and input_check_pressed("down") { // Item 5
-					oLanguageList.items[5].selected = 0
-					oLanguageList.items[4].selected = 1
-				}
-				else if oLanguageList.items[5].selected == 1 and input_check_pressed("up") { // Item 5
-					oLanguageList.items[5].selected = 0
-					oLanguageList.items[6].selected = 1
-				}
-							
-				else if oLanguageList.items[6].selected == 1 and input_check_pressed("down") { // Item 6
-					oLanguageList.items[6].selected = 0
-					oLanguageList.items[5].selected = 1
-				}
-				else if oLanguageList.items[6].selected == 1 and input_check_pressed("up") { // Item 6
-					oLanguageList.items[6].selected = 0
-					oLanguageList.items[7].selected = 1
-				}
-							
-				else if oLanguageList.items[7].selected == 1 and input_check_pressed("down") { // Item 7
-					oLanguageList.items[7].selected = 0
-					oLanguageList.items[6].selected = 1
-				}
-				else if oLanguageList.items[7].selected == 1 and input_check_pressed("up") { // Item 7
-					oLanguageList.items[7].selected = 0
-					oLanguageList.items[8].selected = 1
-				}
-							
-				else if oLanguageList.items[8].selected == 1 and input_check_pressed("down") { // Item 8
-					oLanguageList.items[8].selected = 0
-					oLanguageList.items[7].selected = 1
-				}
-				else if oLanguageList.items[8].selected == 1 and input_check_pressed("up") { // Item 8
-					oLanguageList.items[8].selected = 0
-					oLanguageList.items[9].selected = 1
-				}
-							
-				else if oLanguageList.items[9].selected == 1 and input_check_pressed("down") { // Item 9
-					oLanguageList.items[9].selected = 0
-					oLanguageList.items[8].selected = 1
+				else if oLanguageList.items[5].selected == true and input_check_pressed("down") { // Item 5
+					oLanguageList.items[5].selected = false
+					oLanguageList.items[4].selected = true
 				}
 				
 				else if input_check_pressed("left") or input_check_pressed("back") { // Play
-					oLanguageList.selected = 0
+					oLanguageList.selected = false
 					with oLanguageItem instance_destroy()
-					oButtonPlay.selected = 1
+					oButtonPlay.selected = true
 				}
 			}
 		}
@@ -223,37 +187,37 @@ if global.input == 1 {
 	#region Settings
 		if room == rSettings { // If the controller is active in the main menu
 		
-			if oButtonAudio.selected == 1 and input_check_pressed("down") { // Audio
-				oButtonAudio.selected = 0
-				oButtonVideo.selected = 1
+			if oButtonAudio.selected == true and input_check_pressed("down") { // Audio
+				oButtonAudio.selected = false
+				oButtonVideo.selected = true
 			}
-			else if oButtonVideo.selected == 1 and input_check_pressed("up") { // Video
-				oButtonVideo.selected = 0
-				oButtonAudio.selected = 1
+			else if oButtonVideo.selected == true and input_check_pressed("up") { // Video
+				oButtonVideo.selected = false
+				oButtonAudio.selected = true
 			}
-			else if oButtonVideo.selected == 1 and input_check_pressed("down") { // Video
-				oButtonVideo.selected = 0
-				oButtonGameplay.selected = 1
+			else if oButtonVideo.selected == true and input_check_pressed("down") { // Video
+				oButtonVideo.selected = false
+				oButtonGameplay.selected = true
 			}
-			else if oButtonGameplay.selected == 1 and input_check_pressed("up") { // Difficulty
-				oButtonGameplay.selected = 0
-				oButtonVideo.selected = 1
+			else if oButtonGameplay.selected == true and input_check_pressed("up") { // Difficulty
+				oButtonGameplay.selected = false
+				oButtonVideo.selected = true
 			}
-			else if oButtonGameplay.selected == 1 and input_check_pressed("down") { // Difficulty
-				oButtonGameplay.selected = 0
-				oButtonControls.selected = 1
+			else if oButtonGameplay.selected == true and input_check_pressed("down") { // Difficulty
+				oButtonGameplay.selected = false
+				oButtonControls.selected = true
 			}
-			else if oButtonControls.selected == 1 and input_check_pressed("up") { // Controls
-				oButtonControls.selected = 0
-				oButtonGameplay.selected = 1
+			else if oButtonControls.selected == true and input_check_pressed("up") { // Controls
+				oButtonControls.selected = false
+				oButtonGameplay.selected = true
 			}
-			else if oButtonControls.selected == 1 and input_check_pressed("down") { // Controls
-				oButtonControls.selected = 0
-				oButtonBackMenu.selected = 1
+			else if oButtonControls.selected == true and input_check_pressed("down") { // Controls
+				oButtonControls.selected = false
+				oButtonBackMenu.selected = true
 			}
-			else if oButtonBackMenu.selected == 1 and input_check_pressed("up") { // Back
-				oButtonBackMenu.selected = 0
-				oButtonControls.selected = 1
+			else if oButtonBackMenu.selected == true and input_check_pressed("up") { // Back
+				oButtonBackMenu.selected = false
+				oButtonControls.selected = true
 			}
 
 		}
@@ -262,29 +226,29 @@ if global.input == 1 {
 	#region Audio
 		if room == rAudio { // If the controller is active in the main menu
 			
-			if oMasterVol.selected == 1 and input_check_pressed("down") { // MasterVol
-				oMasterVol.selected = 0
-				oMusicVol.selected = 1
+			if oMasterVol.selected == true and input_check_pressed("down") { // MasterVol
+				oMasterVol.selected = false
+				oMusicVol.selected = true
 			}
-			else if oMusicVol.selected == 1 and input_check_pressed("up") { // MusicVol
-				oMusicVol.selected = 0
-				oMasterVol.selected = 1
+			else if oMusicVol.selected == true and input_check_pressed("up") { // MusicVol
+				oMusicVol.selected = false
+				oMasterVol.selected = true
 			}
-			else if oMusicVol.selected == 1 and input_check_pressed("down") { // MusicVol
-				oMusicVol.selected = 0
-				oSoundVol.selected = 1
+			else if oMusicVol.selected == true and input_check_pressed("down") { // MusicVol
+				oMusicVol.selected = false
+				oSoundVol.selected = true
 			}
-			else if oSoundVol.selected == 1 and input_check_pressed("up") { // SoundVol
-				oSoundVol.selected = 0
-				oMusicVol.selected = 1
+			else if oSoundVol.selected == true and input_check_pressed("up") { // SoundVol
+				oSoundVol.selected = false
+				oMusicVol.selected = true
 			}
-			else if oSoundVol.selected == 1 and input_check_pressed("down") { // SoundVol
-				oSoundVol.selected = 0
-				oButtonBackSettings.selected = 1
+			else if oSoundVol.selected == true and input_check_pressed("down") { // SoundVol
+				oSoundVol.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oButtonBackSettings.selected == 1 and input_check_pressed("up") { // Back
-				oButtonBackSettings.selected = 0
-				oSoundVol.selected = 1
+			else if oButtonBackSettings.selected == true and input_check_pressed("up") { // Back
+				oButtonBackSettings.selected = false
+				oSoundVol.selected = true
 			}
 			
 			var _left = input_check_pressed("left")
@@ -294,29 +258,29 @@ if global.input == 1 {
 			if _leftHeld _left = 1
 			if _rightHeld _right = 1
 			
-			if oMasterVol.selected == 1 
+			if oMasterVol.selected == true
 				and _right
 				and oMasterVol.slider.value < 1
 					oMasterVol.slider.value += 0.01
-			else if oMasterVol.selected == 1 
+			else if oMasterVol.selected == true
 				and _left
 				and oMasterVol.slider.value > 0
 					oMasterVol.slider.value -= 0.01
 			
-			else if oMusicVol.selected == 1 
+			else if oMusicVol.selected == true
 				and _right
 				and oMusicVol.slider.value < 1
 					oMusicVol.slider.value += 0.01
-			else if oMusicVol.selected == 1 
+			else if oMusicVol.selected == true
 				and _left
 				and oMusicVol.slider.value > 0
 					oMusicVol.slider.value -= 0.01
 			
-			else if oSoundVol.selected == 1 
+			else if oSoundVol.selected == true
 				and _right
 				and oSoundVol.slider.value < 1
 					oSoundVol.slider.value += 0.01
-			else if oSoundVol.selected == 1 
+			else if oSoundVol.selected == true
 				and _left
 				and oSoundVol.slider.value > 0
 					oSoundVol.slider.value -= 0.01
@@ -327,107 +291,107 @@ if global.input == 1 {
 	#region Video
 		if room == rVideo { // If the controller is active in the main menu
 			
-			if oResolutionList.selected == 1 and input_check_pressed("down") { // Resolution List
-				oResolutionList.selected = 0
-				oToggleFullscreen.selected = 1
+			if oResolutionList.selected == true and input_check_pressed("down") { // Resolution List
+				oResolutionList.selected = false
+				oToggleFullscreen.selected = true
 			}
-			else if oToggleFullscreen.selected == 1 and input_check_pressed("up") { // Toggle Fullscreen
-				oToggleFullscreen.selected = 0
-				oResolutionList.selected = 1
+			else if oToggleFullscreen.selected == true and input_check_pressed("up") { // Toggle Fullscreen
+				oToggleFullscreen.selected = false
+				oResolutionList.selected = true
 			}
-			else if oToggleFullscreen.selected == 1 and input_check_pressed("down") { // Toggle Fullscreen
-				oToggleFullscreen.selected = 0
-				oButtonBackSettings.selected = 1
+			else if oToggleFullscreen.selected == true and input_check_pressed("down") { // Toggle Fullscreen
+				oToggleFullscreen.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oButtonBackSettings.selected == 1 and input_check_pressed("up") { // Button Back Settings
-				oButtonBackSettings.selected = 0
-				oToggleFullscreen.selected = 1
+			else if oButtonBackSettings.selected == true and input_check_pressed("up") { // Button Back Settings
+				oButtonBackSettings.selected = false
+				oToggleFullscreen.selected = true
 			}
-			else if oApply.selected == 1 and input_check_pressed("left") { // Button Back Settings
-				oApply.selected = 0
-				oButtonBackSettings.selected = 1
+			else if oApply.selected == true and input_check_pressed("left") { // Button Back Settings
+				oApply.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oApply.selected == 1 and input_check_pressed("up") { // Button Back Settings
-				oApply.selected = 0
-				oToggleFullscreen.selected = 1
+			else if oApply.selected == true and input_check_pressed("up") { // Button Back Settings
+				oApply.selected = false
+				oToggleFullscreen.selected = true
 			}
 			else if input_check_pressed("right") { // Apply
-				oResolutionList.selected = 0
-				oToggleFullscreen.selected = 0
-				oButtonBackSettings.selected = 0
+				oResolutionList.selected = false
+				oToggleFullscreen.selected = false
+				oButtonBackSettings.selected = false
 				with oResolutionItem instance_destroy()
-				oApply.selected = 1
+				oApply.selected = true
 			}
 			
 			// Item selection
 			if instance_exists(oResolutionItem) {
 				
-				if oResolutionList.selected == 1 and input_check_pressed("up") { // Resolution List
-					oResolutionList.selected = 0
-					oResolutionList.items[0].selected = 1
+				if oResolutionList.selected == true and input_check_pressed("up") { // Resolution List
+					oResolutionList.selected = false
+					oResolutionList.items[0].selected = true
 				}
 
-				else if oResolutionList.items[0].selected == 1 and input_check_pressed("down") { // Item 0
-					oResolutionList.items[0].selected = 0
-					oResolutionList.selected = 1
+				else if oResolutionList.items[0].selected == true and input_check_pressed("down") { // Item 0
+					oResolutionList.items[0].selected = false
+					oResolutionList.selected = true
 				}
 
-				else if oResolutionList.items[0].selected == 1 and input_check_pressed("up") { // Item 0
-					oResolutionList.items[0].selected = 0
-					oResolutionList.items[1].selected = 1
+				else if oResolutionList.items[0].selected == true and input_check_pressed("up") { // Item 0
+					oResolutionList.items[0].selected = false
+					oResolutionList.items[1].selected = true
 				}
 			
-				else if oResolutionList.items[1].selected == 1 and input_check_pressed("down") { // Item 1
-					oResolutionList.items[1].selected = 0
-					oResolutionList.items[0].selected = 1
+				else if oResolutionList.items[1].selected == true and input_check_pressed("down") { // Item 1
+					oResolutionList.items[1].selected = false
+					oResolutionList.items[0].selected = true
 				}
 
-				else if oResolutionList.items[1].selected == 1 and input_check_pressed("up") { // Item 1
-					oResolutionList.items[1].selected = 0
-					oResolutionList.items[2].selected = 1
+				else if oResolutionList.items[1].selected == true and input_check_pressed("up") { // Item 1
+					oResolutionList.items[1].selected = false
+					oResolutionList.items[2].selected = true
 				}
 			
-				else if oResolutionList.items[2].selected == 1 and input_check_pressed("down") { // Item 2
-					oResolutionList.items[2].selected = 0
-					oResolutionList.items[1].selected = 1
+				else if oResolutionList.items[2].selected == true and input_check_pressed("down") { // Item 2
+					oResolutionList.items[2].selected = false
+					oResolutionList.items[1].selected = true
 				}
 
-				else if oResolutionList.items[2].selected == 1 and input_check_pressed("up") { // Item 2
-					oResolutionList.items[2].selected = 0
-					oResolutionList.items[3].selected = 1
+				else if oResolutionList.items[2].selected == true and input_check_pressed("up") { // Item 2
+					oResolutionList.items[2].selected = false
+					oResolutionList.items[3].selected = true
 				}
 				
-				else if oResolutionList.items[3].selected == 1 and input_check_pressed("down") { // Item 3
-					oResolutionList.items[3].selected = 0
-					oResolutionList.items[2].selected = 1
+				else if oResolutionList.items[3].selected == true and input_check_pressed("down") { // Item 3
+					oResolutionList.items[3].selected = false
+					oResolutionList.items[2].selected = true
 				}
 
-				else if oResolutionList.items[3].selected == 1 and input_check_pressed("up") { // Item 3
-					oResolutionList.items[3].selected = 0
-					oResolutionList.items[4].selected = 1
+				else if oResolutionList.items[3].selected == true and input_check_pressed("up") { // Item 3
+					oResolutionList.items[3].selected = false
+					oResolutionList.items[4].selected = true
 				}
 				
-				else if oResolutionList.items[4].selected == 1 and input_check_pressed("down") { // Item 4
-					oResolutionList.items[4].selected = 0
-					oResolutionList.items[3].selected = 1
+				else if oResolutionList.items[4].selected == true and input_check_pressed("down") { // Item 4
+					oResolutionList.items[4].selected = false
+					oResolutionList.items[3].selected = true
 				}
 
-				else if oResolutionList.items[4].selected == 1 and input_check_pressed("up") { // Item 4
-					oResolutionList.items[4].selected = 0
-					oResolutionList.items[5].selected = 1
+				else if oResolutionList.items[4].selected == true and input_check_pressed("up") { // Item 4
+					oResolutionList.items[4].selected = false
+					oResolutionList.items[5].selected = true
 				}
 			
-				else if oResolutionList.items[5].selected == 1 and input_check_pressed("down") { // Item 5
-					oResolutionList.items[5].selected = 0
-					oResolutionList.items[4].selected = 1
+				else if oResolutionList.items[5].selected == true and input_check_pressed("down") { // Item 5
+					oResolutionList.items[5].selected = false
+					oResolutionList.items[4].selected = true
 				}
 				
 				else if input_check_pressed("right") { // Apply
-					oResolutionList.selected = 0
-					oToggleFullscreen.selected = 0
-					oButtonBackSettings.selected = 0
+					oResolutionList.selected = false
+					oToggleFullscreen.selected = false
+					oButtonBackSettings.selected = false
 					with oResolutionItem instance_destroy()
-					oApply.selected = 1
+					oApply.selected = true
 				}
 			}
 		}
@@ -436,54 +400,54 @@ if global.input == 1 {
 	#region Gameplay
 		if room == rGameplay { // If the controller is active in the main menu
 		
-			if oDifficultyList.selected == 1 and input_check_pressed("down") { // Difficulty List
-				oDifficultyList.selected = 0
-				oButtonBackSettings.selected = 1
+			if oDifficultyList.selected == true and input_check_pressed("down") { // Difficulty List
+				oDifficultyList.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oButtonBackSettings.selected == 1 and input_check_pressed("up") { // Button Back Settings
-				oButtonBackSettings.selected = 0
-				oDifficultyList.selected = 1
+			else if oButtonBackSettings.selected == true and input_check_pressed("up") { // Button Back Settings
+				oButtonBackSettings.selected = false
+				oDifficultyList.selected = true
 			}
 			
 			// Item selection
 			if instance_exists(oDifficultyItem) {
 				
-				if oDifficultyList.selected == 1 and input_check_pressed("right") { // Resolution List
-					oDifficultyList.selected = 0
-					oDifficultyList.items[0].selected = 1
+				if oDifficultyList.selected == true and input_check_pressed("right") { // Resolution List
+					oDifficultyList.selected = false
+					oDifficultyList.items[0].selected = true
 				}
-				else if oDifficultyList.items[0].selected == 1 and input_check_pressed("left") { // Item 0
-					oDifficultyList.items[0].selected = 0
-					oDifficultyList.selected = 1
+				else if oDifficultyList.items[0].selected == true and input_check_pressed("left") { // Item 0
+					oDifficultyList.items[0].selected = false
+					oDifficultyList.selected = true
 				}
-				else if oDifficultyList.items[0].selected == 1 and input_check_pressed("right") { // Item 0
-					oDifficultyList.items[0].selected = 0
-					oDifficultyList.items[1].selected = 1
+				else if oDifficultyList.items[0].selected == true and input_check_pressed("right") { // Item 0
+					oDifficultyList.items[0].selected = false
+					oDifficultyList.items[1].selected = true
 				}
-				else if oDifficultyList.items[1].selected == 1 and input_check_pressed("left") { // Item 1
-					oDifficultyList.items[1].selected = 0
-					oDifficultyList.items[0].selected = 1
+				else if oDifficultyList.items[1].selected == true and input_check_pressed("left") { // Item 1
+					oDifficultyList.items[1].selected = false
+					oDifficultyList.items[0].selected = true
 				}
-				else if oDifficultyList.items[1].selected == 1 and input_check_pressed("right") { // Item 1
-					oDifficultyList.items[1].selected = 0
-					oDifficultyList.items[2].selected = 1
+				else if oDifficultyList.items[1].selected == true and input_check_pressed("right") { // Item 1
+					oDifficultyList.items[1].selected = false
+					oDifficultyList.items[2].selected = true
 				}
-				else if oDifficultyList.items[2].selected == 1 and input_check_pressed("left") { // Item 2
-					oDifficultyList.items[2].selected = 0
-					oDifficultyList.items[1].selected = 1
+				else if oDifficultyList.items[2].selected == true and input_check_pressed("left") { // Item 2
+					oDifficultyList.items[2].selected = false
+					oDifficultyList.items[1].selected = true
 				}
 				else if input_check_pressed("down") { // Apply
-					oDifficultyList.selected = 0
-					oButtonBackSettings.selected = 0
+					oDifficultyList.selected = false
+					oButtonBackSettings.selected = false
 					with oDifficultyItem instance_destroy()
-					oButtonBackSettings.selected = 1
+					oButtonBackSettings.selected = true
 				}
 				
 				// Controller Accept
 				if input_check_pressed("accept") {
-					if oDifficultyList.items[0].selected == 1 global.difficulty = 0
-					else if oDifficultyList.items[1].selected == 1 global.difficulty = 1
-					else if oDifficultyList.items[2].selected == 1 global.difficulty = 2
+					if oDifficultyList.items[0].selected == true global.difficulty = DIFFICULTY_EASY
+					else if oDifficultyList.items[1].selected == true global.difficulty = DIFFICULTY_NORM
+					else if oDifficultyList.items[2].selected == true global.difficulty = DIFFICULTY_HARD
 				}
 			}
 		}
@@ -492,101 +456,101 @@ if global.input == 1 {
 	#region Controls
 		if room == rControls { // If the controller is active in the main menu
 			
-			if oUp.selected == 1 and input_check_pressed("down") { // Up
-				oUp.selected = 0
-				oLeft.selected = 1
+			if oUp.selected == true and input_check_pressed("down") { // Up
+				oUp.selected = false
+				oLeft.selected = true
 			}
-			else if oUp.selected == 1 and input_check_pressed("right") { // Up
-				oUp.selected = 0
-				oInteract.selected = 1
+			else if oUp.selected == true and input_check_pressed("right") { // Up
+				oUp.selected = false
+				oInteract.selected = true
 			}
-			else if oLeft.selected == 1 and input_check_pressed("up") { // Left
-				oLeft.selected = 0
-				oUp.selected = 1
+			else if oLeft.selected == true and input_check_pressed("up") { // Left
+				oLeft.selected = false
+				oUp.selected = true
 			}
-			else if oLeft.selected == 1 and input_check_pressed("down") { // Left
-				oLeft.selected = 0
-				oDown.selected = 1
+			else if oLeft.selected == true and input_check_pressed("down") { // Left
+				oLeft.selected = false
+				oDown.selected = true
 			}
-			else if oLeft.selected == 1 and input_check_pressed("right") { // Left
-				oLeft.selected = 0
-				oJump.selected = 1
+			else if oLeft.selected == true and input_check_pressed("right") { // Left
+				oLeft.selected = false
+				oJump.selected = true
 			}
-			else if oDown.selected == 1 and input_check_pressed("up") { // Down
-				oDown.selected = 0
-				oLeft.selected = 1
+			else if oDown.selected == true and input_check_pressed("up") { // Down
+				oDown.selected = false
+				oLeft.selected = true
 			}
-			else if oDown.selected == 1 and input_check_pressed("down") { // Down
-				oDown.selected = 0
-				oRight.selected = 1
+			else if oDown.selected == true and input_check_pressed("down") { // Down
+				oDown.selected = false
+				oRight.selected = true
 			}
-			else if oDown.selected == 1 and input_check_pressed("right") { // Down
-				oDown.selected = 0
-				oRun.selected = 1
+			else if oDown.selected == true and input_check_pressed("right") { // Down
+				oDown.selected = false
+				oRun.selected = true
 			}
-			else if oRight.selected == 1 and input_check_pressed("up") { // Right
-				oRight.selected = 0
-				oDown.selected = 1
+			else if oRight.selected == true and input_check_pressed("up") { // Right
+				oRight.selected = false
+				oDown.selected = true
 			}
-			else if oRight.selected == 1 and input_check_pressed("down") { // Right
-				oRight.selected = 0
-				oButtonBackSettings.selected = 1
+			else if oRight.selected == true and input_check_pressed("down") { // Right
+				oRight.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oRight.selected == 1 and input_check_pressed("right") { // Right
-				oRight.selected = 0
-				oInventory.selected = 1
+			else if oRight.selected == true and input_check_pressed("right") { // Right
+				oRight.selected = false
+				oInventory.selected = true
 			}
-			else if oInteract.selected == 1 and input_check_pressed("left") { // Interact
-				oInteract.selected = 0
-				oUp.selected = 1
+			else if oInteract.selected == true and input_check_pressed("left") { // Interact
+				oInteract.selected = false
+				oUp.selected = true
 			}
-			else if oInteract.selected == 1 and input_check_pressed("down") { // Interact
-				oInteract.selected = 0
-				oJump.selected = 1
+			else if oInteract.selected == true and input_check_pressed("down") { // Interact
+				oInteract.selected = false
+				oJump.selected = true
 			}
-			else if oJump.selected == 1 and input_check_pressed("up") { // Jump
-				oJump.selected = 0
-				oInteract.selected = 1
+			else if oJump.selected == true and input_check_pressed("up") { // Jump
+				oJump.selected = false
+				oInteract.selected = true
 			}
-			else if oJump.selected == 1 and input_check_pressed("left") { // Jump
-				oJump.selected = 0
-				oLeft.selected = 1
+			else if oJump.selected == true and input_check_pressed("left") { // Jump
+				oJump.selected = false
+				oLeft.selected = true
 			}
-			else if oJump.selected == 1 and input_check_pressed("down") { // Jump
-				oJump.selected = 0
-				oRun.selected = 1
+			else if oJump.selected == true and input_check_pressed("down") { // Jump
+				oJump.selected = false
+				oRun.selected = true
 			}
-			else if oRun.selected == 1 and input_check_pressed("up") { // Run
-				oRun.selected = 0
-				oJump.selected = 1
+			else if oRun.selected == true and input_check_pressed("up") { // Run
+				oRun.selected = false
+				oJump.selected = true
 			}
-			else if oRun.selected == 1 and input_check_pressed("left") { // Run
-				oRun.selected = 0
-				oDown.selected = 1
+			else if oRun.selected == true and input_check_pressed("left") { // Run
+				oRun.selected = false
+				oDown.selected = true
 			}
-			else if oRun.selected == 1 and input_check_pressed("down") { // Run
-				oRun.selected = 0
-				oInventory.selected = 1
+			else if oRun.selected == true and input_check_pressed("down") { // Run
+				oRun.selected = false
+				oInventory.selected = true
 			}
-			else if oInventory.selected == 1 and input_check_pressed("up") { // Inventory
-				oInventory.selected = 0
-				oRun.selected = 1
+			else if oInventory.selected == true and input_check_pressed("up") { // Inventory
+				oInventory.selected = false
+				oRun.selected = true
 			}
-			else if oInventory.selected == 1 and input_check_pressed("left") { // Inventory
-				oInventory.selected = 0
-				oRight.selected = 1
+			else if oInventory.selected == true and input_check_pressed("left") { // Inventory
+				oInventory.selected = false
+				oRight.selected = true
 			}
-			else if oInventory.selected == 1 and input_check_pressed("down") { // Inventory
-				oInventory.selected = 0
-				oButtonBackSettings.selected = 1
+			else if oInventory.selected == true and input_check_pressed("down") { // Inventory
+				oInventory.selected = false
+				oButtonBackSettings.selected = true
 			}
-			else if oButtonBackSettings.selected == 1 and input_check_pressed("up") { // Back
-				oButtonBackSettings.selected = 0
-				oRight.selected = 1
+			else if oButtonBackSettings.selected == true and input_check_pressed("up") { // Back
+				oButtonBackSettings.selected = false
+				oRight.selected = true
 			}
-			else if oButtonBackSettings.selected == 1 and input_check_pressed("right") { // Back
-				oButtonBackSettings.selected = 0
-				oInventory.selected = 1
+			else if oButtonBackSettings.selected == true and input_check_pressed("right") { // Back
+				oButtonBackSettings.selected = false
+				oInventory.selected = true
 			}
 		}
 	#endregion

@@ -1,7 +1,7 @@
 /// @description
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 button_pressed = false;
 

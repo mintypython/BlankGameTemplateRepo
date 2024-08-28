@@ -1,8 +1,8 @@
 // Target Controls
-#macro DEV_MODE 0
-#macro Dev:DEV_MODE 1
-#macro DEMO_MODE 0
-#macro Demo:DEMO_MODE 1
+#macro DEV_MODE false
+#macro Dev:DEV_MODE true
+#macro DEMO_MODE false
+#macro Demo:DEMO_MODE true
 
 // Audio
 #macro MASTER_VOL 0.7
@@ -26,9 +26,8 @@
 #macro VIEW_X camera_get_view_x(VIEW)
 #macro VIEW_Y camera_get_view_y(VIEW)
 
-// GUI
+///////////////////////////////// GUI
 #macro MENU_BUTTON_ALPHA 0.8
-
 // Font
 #macro DEFAULT_FONT "fUbuntu"
 #macro MENU_TITLE_SCALE 0.45
@@ -36,6 +35,19 @@
 #macro MENU_BUTTON_SCALE 0.25
 #macro MENU_LIST_SCALE 0.2
 #macro MENU_SMALL_SCALE 0.12
+// Input
+#macro KBM 0
+#macro CONTROLLER 1
+// Audio
+#macro SLIDER_TYPE_MASTER 0
+#macro SLIDER_TYPE_MUSIC 1
+#macro SLIDER_TYPE_SOUND 2
+// Difficulty
+#macro DIFFICULTY_EASY 0
+#macro DIFFICULTY_NORM 1
+#macro DIFFICULTY_HARD 2
+// DEBUG
+#macro DEBUG_COLOR c_green
 
 // Saving
 global.saveDir = game_save_id
@@ -61,20 +73,20 @@ global.sfxVolume = SOUND_VOL
 global.musicVolume = MUSIC_VOL
 
 // Video
-global.fullscreen = 1
+global.fullscreen = true
 global.resolution = 5
 
 // Difficulty (Easy = 0, Normal = 1, Hard = 2)
-global.difficulty = 1
+global.difficulty = DIFFICULTY_EASY
 
 // Player profiles (First = 0, Second = 1, Third = 2) [NOT IN USE]
 global.profile = 0
 
 // Pausing
-global.pause = 0
+global.pause = false
 
 // Switching between KBM and controller (KBM = 0, Controller = 1)
-global.input = 1
+global.input = KBM
 
 // Debug Views
-global.debugViewGame = 0
+global.debugViewGame = noone

@@ -11,7 +11,7 @@ resList = ["800x480", "1024x768", "1280x720", "1366x768", "1600x900", "1920x1080
 position = 5
 
 // Default selection for controller navigation
-selected = 1
+selected = true
 
 // Init item to create 
 item = noone

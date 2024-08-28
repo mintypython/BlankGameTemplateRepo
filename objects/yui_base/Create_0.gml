@@ -1,6 +1,6 @@
 /// @description init
 
-event_inherited();
+event_inherited()
 
 default_props = {};
 

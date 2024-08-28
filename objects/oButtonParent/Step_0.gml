@@ -3,7 +3,7 @@ var _originX = x - (sprite_width / 2)
 var _originY = y - (sprite_height / 2)
 
 #region Mouse Controls
-if global.input == 0 {
+if global.input == KBM {
 	if mouse_x > _originX 
 		and mouse_x < _originX + sprite_width 
 		and mouse_y > _originY 
@@ -31,7 +31,7 @@ if global.input == 0 {
 	}
 
 	// Mouse Clicking Effects
-	if hovering and mouse_check_button_pressed(mb_left) {
+	if hovering and input_check_pressed("leftclick") {
 		// Lower the position of the button slightly when it's clicked on
 		y = ystart + 4
 
@@ -45,8 +45,8 @@ if global.input == 0 {
 #endregion
 
 #region Controller Support
-if global.input == 1 {
-	if selected == 1 { // Selection Event Constant
+if global.input == CONTROLLER {
+	if selected == true{ // Selection Event Constant
 
 	   // Raises the transparency when the button is selected
 		image_alpha = 1
@@ -59,7 +59,7 @@ if global.input == 1 {
 		// Run only once flag
 		runOnce = true
 
-	} else if selected == 0 { // Deselection Event Constant
+	} else if selected == false { // Deselection Event Constant
 
 	   // Resets the transparency when the controller selects something else
 		image_alpha = MENU_BUTTON_ALPHA
@@ -67,7 +67,7 @@ if global.input == 1 {
 		// Toggle  off when leaving
 		hovering = false
 		runOnce = false
-		selected = 0
+		selected = false
 	}
 	
 	// Controller A/X accept

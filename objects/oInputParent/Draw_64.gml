@@ -1,5 +1,5 @@
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // Pull the icon
 var _binding = input_binding_get(action, 0, 0)
@@ -18,6 +18,12 @@ if input_binding_scan_in_progress() {
 	draw_set_alpha(1)
 	draw_rectangle(room_width * 0.33, room_height * 0.33, room_width - (room_width * 0.33), room_height - (room_height * 0.33), 1)
 	
-	scribble_draw_text_ext(room_width / 2, room_height / 2, "Select new input...", MENU_LIST_SCALE)
+	scribble_draw_text_ext(room_width / 2, room_height / 2, locale("new_input"), MENU_LIST_SCALE)
 	scribble_draw_text_ext(room_width / 2, room_height / 2 + 64, string(ceil(input_binding_scan_time_remaining() / 1000)), MENU_SMALL_SCALE)
+}
+
+if DEV_MODE {
+	draw_set_color(DEBUG_COLOR)
+	draw_text(x + 32, y + 32, "selected: " + string(selected))
+	draw_set_color(c_white)
 }

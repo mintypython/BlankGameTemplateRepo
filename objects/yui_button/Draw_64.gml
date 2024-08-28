@@ -1,7 +1,7 @@
 /// @description draw alpha + highlight
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 var show_highlight = (highlight || YuiCursorManager.focused_item == id)
 	&& highlight_color != undefined

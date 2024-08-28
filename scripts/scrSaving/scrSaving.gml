@@ -24,7 +24,7 @@ function saveGame() {
 	file_text_close(_file)
 	
 	// Show saving
-	if (!instance_exists(oSaving)) instance_create_layer(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), "Control", oSaving)
+	if (!instance_exists(oSaving)) instance_create_layer(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), "GUI", oSaving)
 }
 
 function loadGame() {

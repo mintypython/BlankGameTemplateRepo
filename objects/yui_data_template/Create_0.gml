@@ -1,7 +1,7 @@
 /// @description
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // the render instance for the resolved template element
 template_item = undefined;

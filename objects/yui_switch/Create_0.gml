@@ -1,7 +1,7 @@
 /// @description init
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 case_item = undefined;
 

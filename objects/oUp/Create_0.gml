@@ -5,7 +5,7 @@ event_inherited()
 buttonText = locale("up")
 
 // Default selection for controller navigation
-selected = 1
+selected = true
 
 // Verb for the action this button controls
 action = "moveUp"

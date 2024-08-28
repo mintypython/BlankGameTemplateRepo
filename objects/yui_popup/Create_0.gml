@@ -1,7 +1,7 @@
 /// @description init
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 border_arrange = arrange;
 /// @param {struct} available_size

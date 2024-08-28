@@ -18,16 +18,6 @@ if (!surface_exists(shad_surf)){
 
 matrix_set(matrix_world,matrix_build(-vx,-vy,0,0,0,0,1,1,1))
 
-// Draw Normal
-/*surface_set_target(global.n_surf)
-shader_set(shd_norm)
-with(oPlayer){
-	draw_self()
-}
-shader_reset()
-surface_reset_target()*/
-
-
 surface_set_target(shad_surf)
 draw_clear_alpha(c_dkgray, 0)
 draw_surface_ext(application_surface, _vx, _vy, 1, 1, 0, c_white, 0.2)

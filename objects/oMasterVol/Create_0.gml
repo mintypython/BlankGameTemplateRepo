@@ -7,8 +7,12 @@ buttonText = locale("master")
 // Create sliders to the right
 slider = instance_create_layer(x + (sprite_width / 2) + 32, y, "Instances", oSlider)
 slider.value = global.masterVolume
-slider.type = 0
+slider.type = SLIDER_TYPE_MASTER
 slider.owner = id
 
 // Default selection for controller navigation
-selected = 1
+selected = true
+
+// Muting
+muted = false
+previousValue = slider.value

@@ -13,7 +13,7 @@ with (oDifficultyItem) instance_destroy()
 // Clear array list of items after selection is made
 with (oDifficultyList) {
 	items = []
-	selected = 1
+	selected = true
 }
 
 // Save game

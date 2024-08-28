@@ -35,5 +35,6 @@
   "master": "Maestro",
   "music": "Musica",
   "sound": "Suono",
-  "language": "Lingua"
+  "language": "Lingua",
+  "new_input": "Seleziona nuovo input..."
 }

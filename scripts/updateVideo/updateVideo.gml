@@ -34,8 +34,8 @@ function updateVideo() {
 
 	global.width = _width
 	global.height = _height
-	if global.fullscreen == 0 window_set_fullscreen(false)
-	else if global.fullscreen == 1 window_set_fullscreen(true)
+	if global.fullscreen == false window_set_fullscreen(false)
+	else if global.fullscreen == true window_set_fullscreen(true)
 	
 	// Set the resolution to display, or get this value from the device
 	var _displayWidth = global.width

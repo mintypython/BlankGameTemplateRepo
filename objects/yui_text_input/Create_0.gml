@@ -1,7 +1,7 @@
 /// @description 
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // whether to force an update to the yui_text element
 update = false;

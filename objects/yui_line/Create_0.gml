@@ -1,7 +1,7 @@
 /// @description 
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 onLayoutInit = function() {
 	draw_to_world = layout_props.draw_to_world;

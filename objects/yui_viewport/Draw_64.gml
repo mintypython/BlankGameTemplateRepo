@@ -1,6 +1,6 @@
 /// @description 
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // draw the viewport surface

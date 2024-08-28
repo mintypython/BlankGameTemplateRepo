@@ -1,7 +1,7 @@
 /// @description 
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // where to position relative to viewport draw rect
 viewport_x = 0;

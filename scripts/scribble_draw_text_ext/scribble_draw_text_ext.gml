@@ -1,7 +1,7 @@
-function scribble_draw_text_ext(x, y, _str, _scale, _color = c_white, _buttonSprite = noone) {
+function scribble_draw_text_ext(x, y, _str, _scale, _color = c_white, _buttonSprite = noone, _halign = fa_center) {
 	var _text = scribble(_str)
 		_text.starting_format(DEFAULT_FONT, _color)
-		_text.align(fa_center, fa_middle)
+		_text.align(_halign, fa_middle)
 		
 		if _buttonSprite != noone {
 			var _wButton = sprite_get_width(_buttonSprite)

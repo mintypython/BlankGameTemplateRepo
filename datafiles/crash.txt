@@ -1,5 +1,5 @@
-{ line : 30, stacktrace : [ "gml_Object_oPauseControl_Draw_77 (line 30)" ], message : "Trying to use a depth buffer of a surface target that does not exist.", longMessage : "ERROR in action number 1
-of Draw Event for object oPauseControl:
-Trying to use a depth buffer of a surface target that does not exist.
- at gml_Object_oPauseControl_Draw_77 (line 30) - 		surface_set_target(pauseSurf, 0)
-", script : "gml_Object_oPauseControl_Draw_77" }
+{ line : 27, stacktrace : [ "gml_Script_saveGame (line 27)","gml_Object_oButtonBackSettings_Alarm_0 (line 8) - saveGame()" ], message : "instance_create_layer :: specified layer "Control" does not exist", longMessage : "ERROR in action number 1
+of Alarm Event for alarm 0 for object oButtonBackSettings:
+instance_create_layer :: specified layer "Control" does not exist
+ at gml_Script_saveGame (line 27) - 	if (!instance_exists(oSaving)) instance_create_layer(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), "Control", oSaving)
+", script : "gml_Script_saveGame" }

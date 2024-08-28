@@ -15,8 +15,8 @@
     "path":"folders/(Main Menu)/Objects/0. Main.yy",
   },
   "parentObjectId":{
-    "name":"oListParent",
-    "path":"objects/oListParent/oListParent.yy",
+    "name":"oButtonParent",
+    "path":"objects/oButtonParent/oButtonParent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

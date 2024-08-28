@@ -1,5 +1,5 @@
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // Destroy all submenu items 
 if instance_exists(oDifficultyItem) {

@@ -5,7 +5,7 @@ if trace
 	DEBUG_BREAK_YUI
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 // support text animation
 if !use_scribble && text_value.is_live {

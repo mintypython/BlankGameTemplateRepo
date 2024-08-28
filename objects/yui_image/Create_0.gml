@@ -4,7 +4,7 @@
 sprite_index = -1;
 
 // Inherit the parent event
-event_inherited();
+event_inherited()
 
 onLayoutInit = function() {
 	
