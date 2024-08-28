@@ -18,6 +18,8 @@
 #macro WINDOW_W window_get_width()
 #macro WINDOW_H window_get_height()
 #macro FRAMERATE display_get_frequency()
+#macro FULLSCREEN true
+#macro Dev:FULLSCREEN false
 #macro BASE_W 1920
 #macro BASE_H 1080
 #macro VIEW view_camera[0]
@@ -73,7 +75,7 @@ global.sfxVolume = SOUND_VOL
 global.musicVolume = MUSIC_VOL
 
 // Video
-global.fullscreen = true
+global.fullscreen = FULLSCREEN
 global.resolution = 5
 
 // Difficulty (Easy = 0, Normal = 1, Hard = 2)
