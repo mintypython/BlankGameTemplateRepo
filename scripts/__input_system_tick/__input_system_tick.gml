@@ -500,7 +500,7 @@ function __input_system_tick()
             var _change = max(0, gamepad_get_device_count() - _g);
             repeat(_change)
             {
-                _global.__gamepads[_g] = undefined;
+                //_global.__gamepads[_g] = undefined;
                 array_push(INPUT_GAMEPAD, new __input_class_source(__INPUT_SOURCE.GAMEPAD, array_length(INPUT_GAMEPAD)));
             
                 if ((_global.__source_mode == INPUT_SOURCE_MODE.MIXED) || (_global.__source_mode == INPUT_SOURCE_MODE.MULTIDEVICE))
@@ -552,8 +552,8 @@ function __input_system_tick()
                     if (!__INPUT_SILENT) __input_trace("Gamepad ", _g, " disconnected");
                         
                     gamepad_set_vibration(_global.__gamepads[_g].__index, 0, 0);
-                    _global.__gamepads[@ _g] = undefined;
-                        
+                    //_global.__gamepads[@ _g] = undefined;
+                    //    
                     //Also report gamepad changes for any active players
                     var _p = 0;
                     repeat(INPUT_MAX_PLAYERS)

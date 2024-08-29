@@ -57,25 +57,25 @@
 
 
 
-#macro __INPUT_ON_PS       ((os_type == os_ps4)     || (os_type == os_ps5))
-#macro __INPUT_ON_XBOX     ((os_type == os_xboxone) || (os_type == os_xboxseriesxs))
-#macro __INPUT_ON_SWITCH   (os_type == os_switch)
+#macro __INPUT_ON_PS       false
+#macro __INPUT_ON_XBOX     false
+#macro __INPUT_ON_SWITCH   false
 
-#macro __INPUT_ON_ANDROID  (os_type == os_android)
-#macro __INPUT_ON_IOS      ((os_type == os_ios) || (os_type == os_tvos))
+#macro __INPUT_ON_ANDROID  false
+#macro __INPUT_ON_IOS      false
 
-#macro __INPUT_ON_WINDOWS  (os_type == os_windows)
-#macro __INPUT_ON_MACOS    (os_type == os_macosx)
-#macro __INPUT_ON_LINUX    (os_type == os_linux)
-#macro __INPUT_ON_APPLE    (__INPUT_ON_MACOS || __INPUT_ON_IOS)
+#macro __INPUT_ON_WINDOWS  true
+#macro __INPUT_ON_MACOS    false
+#macro __INPUT_ON_LINUX    false
+#macro __INPUT_ON_APPLE    false
 
-#macro __INPUT_ON_OPERAGX  (os_type == os_operagx)
+#macro __INPUT_ON_OPERAGX  false
 
 #macro INPUT_ON_MOBILE      __input_global().__on_mobile
 #macro INPUT_ON_PC          __input_global().__on_desktop
 #macro INPUT_ON_STEAM_DECK  __input_global().__on_steam_deck
-#macro INPUT_ON_CONSOLE    (__INPUT_ON_XBOX || __INPUT_ON_PS || __INPUT_ON_SWITCH)
-#macro INPUT_ON_WEB        ((os_browser != browser_not_a_browser) || __INPUT_ON_OPERAGX)
+#macro INPUT_ON_CONSOLE    false
+#macro INPUT_ON_WEB        false
 
 
 

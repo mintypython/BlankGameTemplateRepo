@@ -54,10 +54,10 @@ if ((mouse_x != xx)
 	or (mouse_y != yy) 
 	or keyboard_check_pressed(vk_anykey)) 
 	and global.input == CONTROLLER {
-		global.input = KBM
-		with (oButtonParent) controllerHovered = controllerHoveredBase
+		//global.input = KBM
+		//with (oButtonParent) controllerHovered = controllerHoveredBase
 }
-// Update previous mouse position to the new current position
+// Update prevdious mouse position to the new current position
 xx = mouse_x;
 yy = mouse_y;
 

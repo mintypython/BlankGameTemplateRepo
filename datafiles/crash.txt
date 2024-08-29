@@ -1,5 +1,5 @@
-{ line : 27, stacktrace : [ "gml_Script_saveGame (line 27)","gml_Object_oButtonBackSettings_Alarm_0 (line 8) - saveGame()" ], message : "instance_create_layer :: specified layer "Control" does not exist", longMessage : "ERROR in action number 1
-of Alarm Event for alarm 0 for object oButtonBackSettings:
-instance_create_layer :: specified layer "Control" does not exist
- at gml_Script_saveGame (line 27) - 	if (!instance_exists(oSaving)) instance_create_layer(room_width - (sprite_get_width(sSaving) * 1.5), sprite_get_height(sSaving), "Control", oSaving)
-", script : "gml_Script_saveGame" }
+{ script : "gml_Script_input_source_detect_input", line : 81, message : "Variable <unknown_object>.__get_any_pressed(100361, -2147483648) cannot be resolved.", longMessage : "ERROR in action number 1
+of  Step Event0 for object oMasterControl:
+Variable <unknown_object>.__get_any_pressed(100361, -2147483648) cannot be resolved.
+ at gml_Script_input_source_detect_input (line 81) -                 && (_global.__gamepads[_gamepad].__get_any_pressed()))
+", stacktrace : [ "gml_Script_input_source_detect_input (line 81)","gml_Script_input_source_detect_input (line 27) -             if (input_source_detect_input(_source[_i], _available_only)) return true;","gml_Object_oMasterControl_Step_0 (line 1) - #region Delta, Background Update, FPS Update" ] }

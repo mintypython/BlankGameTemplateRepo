@@ -11,20 +11,35 @@ if global.input == KBM {
 
 	if mouseSelected {
 		value = clamp((mouse_x - x) / sprite_width, 0, maxValue)
-		if type == SLIDER_TYPE_MASTER global.masterVolume = value
-		else if type == SLIDER_TYPE_MUSIC global.musicVolume = value
-		else if type == SLIDER_TYPE_SOUND global.sfxVolume = value
+		if type == SLIDER_TYPE_MASTER {
+			global.masterVolume = value
+			owner.previousValue = value
+		}
+		else if type == SLIDER_TYPE_MUSIC {
+			global.musicVolume = value
+			owner.previousValue = value
+		}
+		else if type == SLIDER_TYPE_SOUND {
+			global.sfxVolume = value
+			owner.previousValue = value
+		}
 	}
 }
 
 // Controller Support
 if global.input == CONTROLLER {
 	if owner.controllerHovered {
-		if type == SLIDER_TYPE_MASTER global.masterVolume = value
-		else if type == SLIDER_TYPE_MUSIC global.musicVolume = value
-		else if type == SLIDER_TYPE_SOUND global.sfxVolume = value
-	}
+		if type == SLIDER_TYPE_MASTER {
+			global.masterVolume = value
+			//owner.previousValue = value
+		}
+		else if type == SLIDER_TYPE_MUSIC {
+			global.musicVolume = value
+			///owner.previousValue = value
+		}
+		else if type == SLIDER_TYPE_SOUND {
+			global.sfxVolume = value
+			//owner.previousValue = value
+		}
+	}	
 }
-
-if value > 0 owner.muted = false
-else if value == 0 owner.muted = true
