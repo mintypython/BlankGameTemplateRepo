@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"neverDeactive",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"neverDeactive",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/(System)/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
